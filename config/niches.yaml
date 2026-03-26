@@ -1,0 +1,141 @@
+niches:
+  technology:
+    display_name: "Tech & AI"
+    description: "Latest technology trends, AI breakthroughs, and gadget reviews"
+    tone: "excited, informative, slightly nerdy"
+    keywords:
+      - artificial intelligence
+      - machine learning
+      - startups
+      - gadgets
+      - cybersecurity
+      - programming
+    subreddits:
+      - technology
+      - artificial
+      - MachineLearning
+      - programming
+    youtube_category_id: "28"
+    news_category: technology
+    tts_voice: "en-US-GuyNeural"
+    script_style: dramatic_reveal
+    posting_times:
+      youtube: 14
+      instagram: 18
+      tiktok: 19
+    platforms:
+      youtube:
+        channel_id: ""
+      instagram:
+        account_id: ""
+      tiktok:
+        account_id: ""
+
+  finance:
+    display_name: "Money & Markets"
+    description: "Stock market moves, crypto updates, and personal finance tips"
+    tone: "authoritative, urgent, data-driven"
+    keywords:
+      - stocks
+      - cryptocurrency
+      - investing
+      - economy
+      - personal finance
+      - bitcoin
+    subreddits:
+      - wallstreetbets
+      - investing
+      - CryptoCurrency
+      - personalfinance
+    youtube_category_id: "22"
+    news_category: business
+    tts_voice: "en-US-DavisNeural"
+    script_style: breaking_news
+    posting_times:
+      youtube: 10
+      instagram: 12
+      tiktok: 17
+    platforms:
+      youtube:
+        channel_id: ""
+
+  science:
+    display_name: "Science & Space"
+    description: "Space discoveries, scientific breakthroughs, and nature wonders"
+    tone: "awe-inspiring, educational, mind-blowing"
+    keywords:
+      - space
+      - nasa
+      - physics
+      - biology
+      - climate
+      - discovery
+    subreddits:
+      - science
+      - space
+      - Futurology
+    youtube_category_id: "28"
+    news_category: science
+    tts_voice: "en-US-AriaNeural"
+    script_style: dramatic_reveal
+    posting_times:
+      youtube: 16
+      instagram: 20
+    platforms:
+      youtube:
+        channel_id: ""
+
+  entertainment:
+    display_name: "Entertainment & Pop Culture"
+    description: "Celebrity news, movie releases, viral moments, and pop culture"
+    tone: "fun, gossipy, energetic"
+    keywords:
+      - movies
+      - celebrity
+      - viral
+      - gaming
+      - music
+      - streaming
+    subreddits:
+      - entertainment
+      - movies
+      - gaming
+      - popculture
+    youtube_category_id: "24"
+    news_category: entertainment
+    tts_voice: "en-US-JennyNeural"
+    script_style: storytelling
+    posting_times:
+      youtube: 18
+      instagram: 20
+      tiktok: 21
+    platforms:
+      youtube:
+        channel_id: ""
+
+  health:
+    display_name: "Health & Wellness"
+    description: "Health tips, medical breakthroughs, fitness trends, and nutrition"
+    tone: "caring, motivational, evidence-based"
+    keywords:
+      - health
+      - fitness
+      - nutrition
+      - mental health
+      - medical
+      - wellness
+    subreddits:
+      - health
+      - Fitness
+      - nutrition
+      - science
+    youtube_category_id: "26"
+    news_category: health
+    tts_voice: "en-US-SaraNeural"
+    script_style: educational
+    posting_times:
+      youtube: 8
+      instagram: 7
+    platforms:
+      youtube:
+        channel_id: ""

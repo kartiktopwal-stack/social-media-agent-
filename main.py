@@ -27,7 +27,8 @@ console = Console()
 logger = get_logger("main")
 
 
-def _setup():
+def _setup() -> None:
+    """Initialize logging and database."""
     configure_logging(level=settings.log_level, environment=settings.env)
     init_database()
 
@@ -38,29 +39,50 @@ def _setup():
 def run(
     niches: Optional[list[str]] = typer.Option(None, "--niches", "-n", help="Niche names to run"),
     dry_run: bool = typer.Option(False, "--dry-run", "-d", help="Skip publishing"),
-):
+) -> None:
     """Run the complete daily pipeline for all (or selected) niches."""
     _setup()
     from src.orchestrator.pipeline import DailyRunner
 
-    console.print("\n[bold green]🚀 Starting AI Content Empire Pipeline[/bold green]\n")
-    runner = DailyRunner()
-    report = runner.run_all(niche_names=niches, dry_run=dry_run)
+    console.print("\n[bold green]Starting AI Content Empire Pipeline[/bold green]\n")
 
-    table = Table(title="Daily Report", show_header=True, header_style="bold magenta")
-    table.add_column("Metric", style="cyan")
-    table.add_column("Value", style="white")
+    try:
+        runner = DailyRunner()
+        report = runner.run_all(niche_names=niches, dry_run=dry_run)
 
-    table.add_row("Date", report.date)
-    table.add_row("Total Jobs", str(report.total_jobs))
-    table.add_row("Completed", f"[green]{report.completed}[/green]")
-    table.add_row("Failed", f"[red]{report.failed}[/red]" if report.failed else "[green]0[/green]")
-    table.add_row("Published", str(report.published))
-    table.add_row("Top Topic", report.top_topic[:60])
-    table.add_row("Virality", f"{report.top_virality_score:.1f}/10")
-    table.add_row("Niches Active", ", ".join(report.niches_covered))
+        table = Table(title="Daily Report", show_header=True, header_style="bold magenta")
+        table.add_column("Metric", style="cyan")
+        table.add_column("Value", style="white")
 
-    console.print(table)
+        table.add_row("Date", report.date)
+        table.add_row("Total Jobs", str(report.total_jobs))
+        table.add_row("Completed", f"[green]{report.completed}[/green]")
+        table.add_row("Failed", f"[red]{report.failed}[/red]" if report.failed else "[green]0[/green]")
+        table.add_row("Published", str(report.published))
+
+        if report.top_topic:
+            table.add_row("Top Topic", report.top_topic[:60])
+            table.add_row("Virality", f"{report.top_virality_score:.1f}/10")
+
+        if report.niches_covered:
+            table.add_row("Niches Active", ", ".join(report.niches_covered))
+
+        console.print(table)
+
+        if report.errors:
+            console.print(f"\n[yellow]Errors ({len(report.errors)}):[/yellow]")
+            for err in report.errors[:5]:
+                console.print(f"  [red]- {err[:100]}[/red]")
+
+        runner.close()
+
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Pipeline interrupted by user.[/yellow]")
+        sys.exit(130)
+    except Exception as e:
+        logger.error("pipeline_run_failed", error=str(e))
+        console.print(f"\n[red]Pipeline failed: {e}[/red]")
+        sys.exit(1)
 
 
 # ─── TRENDS ───────────────────────────────────────────────────────────────────
@@ -68,7 +90,7 @@ def run(
 @app.command()
 def trends(
     niches: Optional[list[str]] = typer.Option(None, "--niches", "-n"),
-):
+) -> None:
     """Run only the trend collection step and print results."""
     _setup()
 
@@ -86,25 +108,32 @@ def trends(
             console.print(f"[red]Unknown niche: {name}[/red]")
             continue
 
-        console.print(f"\n[bold cyan]📊 Trends for: {name}[/bold cyan]")
+        console.print(f"\n[bold cyan]Trends for: {name}[/bold cyan]")
 
-        scored = aggregator.run(cfg)
+        try:
+            scored = aggregator.run(cfg)
 
-        table = Table(show_header=True, header_style="bold blue")
-        table.add_column("#", width=3)
-        table.add_column("Score", width=6)
-        table.add_column("Topic", width=60)
-        table.add_column("Source", width=20)
+            table = Table(show_header=True, header_style="bold blue")
+            table.add_column("#", width=3)
+            table.add_column("Score", width=6)
+            table.add_column("Topic", width=60)
+            table.add_column("Source", width=20)
 
-        for i, t in enumerate(scored, 1):
-            table.add_row(
-                str(i),
-                f"{t.virality_score:.1f}",
-                t.topic[:58],
-                ", ".join(t.sources[:2]),
-            )
+            for i, t in enumerate(scored, 1):
+                table.add_row(
+                    str(i),
+                    f"{t.virality_score:.1f}",
+                    t.topic[:58],
+                    ", ".join(t.sources[:2]),
+                )
 
-        console.print(table)
+            console.print(table)
+
+        except Exception as e:
+            logger.error("trend_collection_failed", niche=name, error=str(e))
+            console.print(f"[red]Failed to collect trends for {name}: {e}[/red]")
+
+    aggregator.close()
 
 
 # ─── SCRIPTS ──────────────────────────────────────────────────────────────────
@@ -113,7 +142,7 @@ def trends(
 def scripts(
     niches: Optional[list[str]] = typer.Option(None, "--niches", "-n"),
     topic: Optional[str] = typer.Option(None, "--topic", "-t"),
-):
+) -> None:
     """Run trend collection + script generation and print scripts."""
     _setup()
 
@@ -132,40 +161,48 @@ def scripts(
         cfg = all_niches.get(name)
 
         if not cfg:
+            console.print(f"[red]Unknown niche: {name}[/red]")
             continue
 
-        if topic:
-            scored = [ScoredTrend(niche=name, topic=topic, virality_score=9.0)]
-        else:
-            scored = aggregator.run(cfg)[:1]
+        try:
+            if topic:
+                scored = [ScoredTrend(niche=name, topic=topic, virality_score=9.0)]
+            else:
+                scored = aggregator.run(cfg)[:1]
 
-        for trend in scored:
-            console.print(f"\n[bold yellow]✍️ Script for: {trend.topic}[/bold yellow]")
+            for trend in scored:
+                console.print(f"\n[bold yellow]Script for: {trend.topic}[/bold yellow]")
 
-            script = generator.generate(trend, cfg, Platform.YOUTUBE)
+                script = generator.generate(trend, cfg, Platform.YOUTUBE)
 
-            console.print(f"\n[bold red]HOOK:[/bold red] {script.sections.hook}")
-            console.print("\n[bold blue]BODY:[/bold blue]")
+                console.print(f"\n[bold red]HOOK:[/bold red] {script.sections.hook}")
+                console.print("\n[bold blue]BODY:[/bold blue]")
 
-            for line in script.sections.body:
-                console.print(f"  • {line}")
+                for line in script.sections.body:
+                    console.print(f"  - {line}")
 
-            console.print(f"\n[bold green]CTA:[/bold green] {script.sections.cta}")
+                console.print(f"\n[bold green]CTA:[/bold green] {script.sections.cta}")
 
-            console.print(
-                f"\n[dim]Words: {script.word_count} | "
-                f"Est. duration: {script.estimated_duration_s:.1f}s[/dim]"
-            )
+                console.print(
+                    f"\n[dim]Words: {script.word_count} | "
+                    f"Est. duration: {script.estimated_duration_s:.1f}s[/dim]"
+                )
+
+        except Exception as e:
+            logger.error("script_generation_failed", niche=name, error=str(e))
+            console.print(f"[red]Failed for {name}: {e}[/red]")
+
+    aggregator.close()
 
 
 # ─── HEALTH CHECK ─────────────────────────────────────────────────────────────
 
 @app.command()
-def health():
+def health() -> None:
     """Check all API connections and configuration."""
     _setup()
 
-    console.print("\n[bold]🏥 System Health Check[/bold]\n")
+    console.print("\n[bold]System Health Check[/bold]\n")
 
     checks = {
         "Gemini API Key (AI + Scoring)": bool(settings.gemini_api_key),
@@ -190,12 +227,12 @@ def health():
 
         if isinstance(value, bool):
             if value:
-                status = "[green]✓ OK[/green]"
+                status = "[green]OK[/green]"
             elif check in critical:
-                status = "[red]✗ MISSING (critical)[/red]"
+                status = "[red]MISSING (critical)[/red]"
                 all_good = False
             else:
-                status = "[yellow]⚠ Not configured[/yellow]"
+                status = "[yellow]Not configured[/yellow]"
         else:
             status = f"[blue]{value}[/blue]"
 
@@ -204,9 +241,9 @@ def health():
     console.print(table)
 
     if all_good:
-        console.print("\n[bold green]✅ System ready to run![/bold green]")
+        console.print("\n[bold green]System ready to run![/bold green]")
     else:
-        console.print("\n[bold red]❌ Missing critical API keys. Check .env file.[/bold red]")
+        console.print("\n[bold red]Missing critical API keys. Check .env file.[/bold red]")
         sys.exit(1)
 
 
@@ -216,11 +253,13 @@ def health():
 def server(
     host: str = typer.Option("0.0.0.0", "--host"),
     port: int = typer.Option(8000, "--port"),
-):
+) -> None:
     """Start the FastAPI monitoring dashboard."""
     _setup()
 
     import uvicorn
+
+    console.print(f"\n[bold green]Starting dashboard at http://{host}:{port}[/bold green]\n")
 
     uvicorn.run(
         "src.dashboard.app:app",
@@ -228,6 +267,19 @@ def server(
         port=port,
         reload=settings.env == "development",
     )
+
+
+# ─── SCHEDULER ────────────────────────────────────────────────────────────────
+
+@app.command()
+def scheduler() -> None:
+    """Start the automated daily scheduler."""
+    _setup()
+
+    from src.orchestrator.scheduler import start_scheduler
+
+    console.print(f"\n[bold green]Starting scheduler (daily run at {settings.daily_run_hour}:00 UTC)[/bold green]\n")
+    start_scheduler()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: content-empire-app
+    env_file:
+      - ../.env
+    volumes:
+      - ../data:/app/data
+      - ../config:/app/config
+    depends_on:
+      - redis
+    ports:
+      - "8000:8000"
+    command: python main.py server
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: content-empire-worker
+    env_file:
+      - ../.env
+    volumes:
+      - ../data:/app/data
+      - ../config:/app/config
+    depends_on:
+      - redis
+    command: python main.py run --dry-run
+    restart: "no"
+
+  scheduler:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: content-empire-scheduler
+    env_file:
+      - ../.env
+    volumes:
+      - ../data:/app/data
+      - ../config:/app/config
+    depends_on:
+      - redis
+    command: python -c "from src.orchestrator.scheduler import start_scheduler; start_scheduler()"
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: content-empire-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
+volumes:
+  redis-data:
