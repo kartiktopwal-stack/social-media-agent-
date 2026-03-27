@@ -101,28 +101,53 @@ class ContentPipeline:
             try:
                 # Step 2: Generate script
                 job.status = JobStatus.GENERATING_SCRIPT
-                logger.info("step_script", topic=trend.topic)
+                logger.info("step_start", job_id=job.job_id, step=job.status.value, topic=trend.topic)
                 script = self._script_generator.generate(trend, niche, Platform.YOUTUBE)
                 job.script = script
+                logger.info("step_complete", job_id=job.job_id, step=job.status.value, topic=trend.topic)
+
+                if dry_run:
+                    logger.info("dry_run_short_circuit", job_id=job.job_id, topic=trend.topic)
+                    settings.ensure_dirs()
+                    placeholder_path = settings.final_dir / f"dry_run_{job.job_id}.mp4"
+                    final = FinalVideo(
+                        video_path=placeholder_path,
+                        title=script.title,
+                        description=script.description,
+                        tags=script.tags,
+                        niche=niche.name,
+                        trend_topic=trend.topic,
+                        script=script,
+                    )
+                    final.publish_results = self._publisher.publish_all(final, niche, dry_run=True)
+                    job.final_video = final
+                    job.status = JobStatus.COMPLETED
+                    job.completed_at = datetime.utcnow()
+                    self._save_job(job)
+                    jobs.append(job)
+                    continue
 
                 # Step 3: Generate voice
                 job.status = JobStatus.GENERATING_VOICE
-                logger.info("step_voice", topic=trend.topic)
+                logger.info("step_start", job_id=job.job_id, step=job.status.value, topic=trend.topic)
                 voice = self._voice_generator.generate(script, niche)
                 job.voice = voice
+                logger.info("step_complete", job_id=job.job_id, step=job.status.value, topic=trend.topic)
 
                 # Step 4: Produce video
                 job.status = JobStatus.PRODUCING_VIDEO
-                logger.info("step_video", topic=trend.topic)
+                logger.info("step_start", job_id=job.job_id, step=job.status.value, topic=trend.topic)
                 video = self._media_producer.produce(script, voice)
                 job.video = video
+                logger.info("step_complete", job_id=job.job_id, step=job.status.value, topic=trend.topic)
 
                 # Step 5: Generate and burn subtitles
                 job.status = JobStatus.GENERATING_SUBTITLES
-                logger.info("step_subtitles", topic=trend.topic)
+                logger.info("step_start", job_id=job.job_id, step=job.status.value, topic=trend.topic)
                 subtitles = self._subtitle_generator.generate_srt(voice, script)
                 job.subtitles = subtitles
                 final_video_result = self._subtitle_generator.burn_subtitles(video, subtitles)
+                logger.info("step_complete", job_id=job.job_id, step=job.status.value, topic=trend.topic)
 
                 # Build FinalVideo
                 final = FinalVideo(
@@ -140,11 +165,18 @@ class ContentPipeline:
 
                 # Step 6: Publish
                 job.status = JobStatus.PUBLISHING
-                logger.info("step_publish", topic=trend.topic, dry_run=dry_run)
+                logger.info(
+                    "step_start",
+                    job_id=job.job_id,
+                    step=job.status.value,
+                    topic=trend.topic,
+                    dry_run=dry_run,
+                )
                 publish_results = self._publisher.publish_all(
                     final, niche, dry_run=dry_run
                 )
                 final.publish_results = publish_results
+                logger.info("step_complete", job_id=job.job_id, step=job.status.value, topic=trend.topic)
 
                 job.status = JobStatus.COMPLETED
                 job.completed_at = datetime.utcnow()
