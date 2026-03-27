@@ -38,7 +38,13 @@ def _setup() -> None:
 @app.command()
 def run(
     niches: Optional[list[str]] = typer.Option(None, "--niches", "-n", help="Niche names to run"),
-    dry_run: bool = typer.Option(False, "--dry-run", "-d", help="Skip publishing"),
+    dry_run: bool = typer.Option(
+        False,
+        "--dry-run",
+        "-d",
+        is_flag=True,
+        help="Enable dry-run mode (skip publishing + media rendering)",
+    ),
 ) -> None:
     """Run the complete daily pipeline for all (or selected) niches."""
     _setup()
@@ -47,8 +53,9 @@ def run(
     console.print("\n[bold green]Starting AI Content Empire Pipeline[/bold green]\n")
 
     try:
+        dry_run_enabled = dry_run or ("--dry-run" in sys.argv) or ("-d" in sys.argv)
         runner = DailyRunner()
-        report = runner.run_all(niche_names=niches, dry_run=dry_run)
+        report = runner.run_all(niche_names=niches, dry_run=bool(dry_run_enabled))
 
         table = Table(title="Daily Report", show_header=True, header_style="bold magenta")
         table.add_column("Metric", style="cyan")
