@@ -11,8 +11,6 @@ import asyncio
 import uuid
 from pathlib import Path
 
-from tenacity import retry, stop_after_attempt, wait_exponential
-
 from config.settings import settings
 from src.core.exceptions import VoiceGenerationError
 from src.utils.logger import get_logger
@@ -24,57 +22,79 @@ logger = get_logger("voice_generator")
 class VoiceGenerator:
     """Generate voice-overs from script text using edge-tts."""
 
-    @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, min=2, max=10),
-    )
+    _VOICE_RETRY_ORDER = [
+        "en-US-AriaNeural",
+        "en-US-GuyNeural",
+        "en-US-JennyNeural",
+    ]
+
     def generate(
         self,
         script: GeneratedScript,
         niche: NicheConfig,
     ) -> VoiceResult:
         """Generate audio from script text."""
-        logger.info(
-            "generating_voice",
-            topic=script.trend_topic,
-            niche=niche.name,
-            voice=niche.tts_voice,
-        )
+        logger.info("generating_voice", topic=script.trend_topic, niche=niche.name)
 
         settings.ensure_dirs()
-        output_path = settings.audio_dir / f"{uuid.uuid4().hex}.mp3"
+        last_error: Exception | None = None
 
-        try:
-            duration = asyncio.run(
-                self._generate_async(script.full_text, niche.tts_voice, output_path)
-            )
-
-            if not output_path.exists():
-                raise VoiceGenerationError("Audio file was not created")
-
-            file_size = output_path.stat().st_size
-            if file_size < 1000:
-                raise VoiceGenerationError(f"Audio file too small ({file_size} bytes)")
-
-            result = VoiceResult(
-                audio_path=output_path,
-                duration_s=duration,
-                voice_id=niche.tts_voice,
-            )
+        for attempt, voice in enumerate(self._VOICE_RETRY_ORDER, start=1):
+            output_path = settings.audio_dir / f"{uuid.uuid4().hex}.mp3"
 
             logger.info(
-                "voice_generated",
-                path=str(output_path),
-                duration_s=duration,
-                size_bytes=file_size,
+                "voice_attempt",
+                attempt=attempt,
+                max_attempts=len(self._VOICE_RETRY_ORDER),
+                voice=voice,
             )
-            return result
 
-        except VoiceGenerationError:
-            raise
-        except Exception as e:
-            logger.error("voice_generation_failed", error=str(e))
-            raise VoiceGenerationError(str(e))
+            try:
+                duration = asyncio.run(
+                    self._generate_async(script.full_text, voice, output_path)
+                )
+
+                if not output_path.exists():
+                    raise VoiceGenerationError("Audio file was not created")
+
+                file_size = output_path.stat().st_size
+                if file_size < 1000:
+                    raise VoiceGenerationError(
+                        f"Audio file too small ({file_size} bytes)"
+                    )
+
+                result = VoiceResult(
+                    audio_path=output_path,
+                    duration_s=duration,
+                    voice_id=voice,
+                )
+
+                logger.info(
+                    "voice_generated",
+                    path=str(output_path),
+                    duration_s=duration,
+                    size_bytes=file_size,
+                    voice=voice,
+                )
+                return result
+
+            except Exception as e:
+                last_error = e
+                if output_path.exists():
+                    output_path.unlink(missing_ok=True)
+                logger.warning(
+                    "voice_attempt_failed",
+                    error=str(e),
+                    attempt=attempt,
+                    max_attempts=len(self._VOICE_RETRY_ORDER),
+                    voice=voice,
+                )
+
+        logger.error("voice_generation_failed", error=str(last_error))
+        raise VoiceGenerationError(
+            f"Failed to generate audio after {len(self._VOICE_RETRY_ORDER)} attempts:"
+            f" {last_error}"
+        )
 
     async def _generate_async(
         self,
