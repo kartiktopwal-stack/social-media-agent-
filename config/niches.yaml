@@ -131,7 +131,7 @@ niches:
       - science
     youtube_category_id: "26"
     news_category: health
-    tts_voice: "en-US-SaraNeural"
+    tts_voice: "en-US-AriaNeural"
     script_style: educational
     posting_times:
       youtube: 8
