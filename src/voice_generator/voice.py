@@ -22,7 +22,7 @@ logger = get_logger("voice_generator")
 class VoiceGenerator:
     """Generate voice-overs from script text using edge-tts."""
 
-    _VOICE_RETRY_ORDER = [
+    _DEFAULT_VOICE_RETRY_ORDER = [
         "en-US-AriaNeural",
         "en-US-GuyNeural",
         "en-US-JennyNeural",
@@ -38,14 +38,15 @@ class VoiceGenerator:
 
         settings.ensure_dirs()
         last_error: Exception | None = None
+        voice_retry_order = self._build_voice_retry_order(niche)
 
-        for attempt, voice in enumerate(self._VOICE_RETRY_ORDER, start=1):
+        for attempt, voice in enumerate(voice_retry_order, start=1):
             output_path = settings.audio_dir / f"{uuid.uuid4().hex}.mp3"
 
             logger.info(
                 "voice_attempt",
                 attempt=attempt,
-                max_attempts=len(self._VOICE_RETRY_ORDER),
+                max_attempts=len(voice_retry_order),
                 voice=voice,
             )
 
@@ -86,15 +87,27 @@ class VoiceGenerator:
                     "voice_attempt_failed",
                     error=str(e),
                     attempt=attempt,
-                    max_attempts=len(self._VOICE_RETRY_ORDER),
+                    max_attempts=len(voice_retry_order),
                     voice=voice,
                 )
 
         logger.error("voice_generation_failed", error=str(last_error))
         raise VoiceGenerationError(
-            f"Failed to generate audio after {len(self._VOICE_RETRY_ORDER)} attempts:"
+            f"Failed to generate audio after {len(voice_retry_order)} attempts:"
             f" {last_error}"
         )
+
+    def _build_voice_retry_order(self, niche: NicheConfig) -> list[str]:
+        """Build retry order with niche/settings voices first, then safe defaults."""
+        retry_order: list[str] = []
+        for voice in (
+            niche.tts_voice,
+            settings.tts_voice,
+            *self._DEFAULT_VOICE_RETRY_ORDER,
+        ):
+            if voice and voice not in retry_order:
+                retry_order.append(voice)
+        return retry_order
 
     async def _generate_async(
         self,
