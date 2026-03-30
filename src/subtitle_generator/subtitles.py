@@ -12,6 +12,7 @@ import re
 import uuid
 from pathlib import Path
 
+from moviepy.config import change_settings
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from config.settings import settings
@@ -26,6 +27,17 @@ from src.utils.models import (
 )
 
 logger = get_logger("subtitle_generator")
+
+IMAGEMAGICK_BINARY = (
+    r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
+)
+
+# Configure MoviePy ImageMagick path before any TextClip usage.
+change_settings({"IMAGEMAGICK_BINARY": IMAGEMAGICK_BINARY})
+logger.debug(
+    "imagemagick_binary_configured",
+    imagemagick_binary=IMAGEMAGICK_BINARY,
+)
 
 
 class SubtitleGenerator:
