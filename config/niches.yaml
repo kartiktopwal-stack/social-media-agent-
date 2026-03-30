@@ -17,7 +17,7 @@ niches:
       - programming
     youtube_category_id: "28"
     news_category: technology
-    tts_voice: "en-US-GuyNeural"
+    tts_voice: "en-US-ChristopherNeural"
     script_style: dramatic_reveal
     posting_times:
       youtube: 14
@@ -49,7 +49,7 @@ niches:
       - personalfinance
     youtube_category_id: "22"
     news_category: business
-    tts_voice: "en-US-GuyNeural"
+    tts_voice: "en-US-ChristopherNeural"
     script_style: breaking_news
     posting_times:
       youtube: 10
@@ -131,7 +131,7 @@ niches:
       - science
     youtube_category_id: "26"
     news_category: health
-    tts_voice: "en-US-AriaNeural"
+    tts_voice: "en-US-JennyNeural"
     script_style: educational
     posting_times:
       youtube: 8
