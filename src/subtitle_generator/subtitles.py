@@ -29,18 +29,27 @@ from src.utils.models import (
 
 logger = get_logger("subtitle_generator")
 
-_WINDOWS_IMAGEMAGICK_PATH = (
-    r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
-)
+_WINDOWS_IMAGEMAGICK_PATH = r"C:\Program Files\ImageMagick-7.1.0-Q16-HDRI\magick.exe"
+
+
+def _resolve_imagemagick_binary() -> str:
+    """Resolve ImageMagick binary path with a clear actionable error."""
+    if Path(_WINDOWS_IMAGEMAGICK_PATH).exists():
+        return _WINDOWS_IMAGEMAGICK_PATH
+
+    magick_path = shutil.which("magick")
+    if magick_path:
+        return magick_path
+
+    raise FileNotFoundError(
+        "ImageMagick binary was not found. Expected Windows path: "
+        f"{_WINDOWS_IMAGEMAGICK_PATH}. "
+        "Install ImageMagick or add `magick` to PATH."
+    )
+
 
 # Configure MoviePy ImageMagick path before any TextClip usage.
-if Path(_WINDOWS_IMAGEMAGICK_PATH).exists():
-    IMAGEMAGICK_BINARY = _WINDOWS_IMAGEMAGICK_PATH
-else:
-    magick_path = shutil.which("magick")
-    if not magick_path:
-        raise Exception("ImageMagick not found in PATH")
-    IMAGEMAGICK_BINARY = magick_path
+IMAGEMAGICK_BINARY = _resolve_imagemagick_binary()
 
 change_settings({"IMAGEMAGICK_BINARY": IMAGEMAGICK_BINARY})
 logger.info(

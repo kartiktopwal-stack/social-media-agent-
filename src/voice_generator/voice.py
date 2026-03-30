@@ -22,11 +22,8 @@ logger = get_logger("voice_generator")
 class VoiceGenerator:
     """Generate voice-overs from script text using edge-tts."""
 
-    VOICE_PRIORITY = [
-        "en-US-AriaNeural",
-        "en-US-GuyNeural",
-        "en-US-JennyNeural",
-    ]
+    UNIVERSAL_FALLBACK_VOICE = "en-US-GuyNeural"
+    RETRIES_PER_VOICE = 3
 
     def generate(
         self,
@@ -40,66 +37,77 @@ class VoiceGenerator:
         last_error: Exception | None = None
         voice_retry_order = self._build_voice_retry_order(niche)
 
-        for attempt, voice in enumerate(voice_retry_order, start=1):
-            output_path = settings.audio_dir / f"{uuid.uuid4().hex}.mp3"
+        total_attempts = len(voice_retry_order) * self.RETRIES_PER_VOICE
+        attempt_counter = 0
 
-            logger.info(
-                "voice_attempt",
-                attempt=attempt,
-                max_attempts=len(voice_retry_order),
-                voice=voice,
-            )
-
-            try:
-                duration = asyncio.run(
-                    self._generate_async(script.full_text, voice, output_path)
-                )
-
-                if not output_path.exists():
-                    raise VoiceGenerationError("Audio file was not created")
-
-                file_size = output_path.stat().st_size
-                if file_size < 1000:
-                    raise VoiceGenerationError(
-                        f"Audio file too small ({file_size} bytes)"
-                    )
-
-                result = VoiceResult(
-                    audio_path=output_path,
-                    duration_s=duration,
-                    voice_id=voice,
-                )
+        for voice in voice_retry_order:
+            for voice_attempt in range(1, self.RETRIES_PER_VOICE + 1):
+                attempt_counter += 1
+                output_path = settings.audio_dir / f"{uuid.uuid4().hex}.mp3"
 
                 logger.info(
-                    "voice_generated",
-                    path=str(output_path),
-                    duration_s=duration,
-                    size_bytes=file_size,
+                    "voice_attempt",
+                    attempt=attempt_counter,
+                    max_attempts=total_attempts,
+                    voice_attempt=voice_attempt,
+                    retries_per_voice=self.RETRIES_PER_VOICE,
                     voice=voice,
                 )
-                return result
 
-            except Exception as e:
-                last_error = e
-                if output_path.exists():
-                    output_path.unlink(missing_ok=True)
-                logger.warning(
-                    "voice_attempt_failed",
-                    error=str(e),
-                    attempt=attempt,
-                    max_attempts=len(voice_retry_order),
-                    voice=voice,
-                )
+                try:
+                    duration = asyncio.run(
+                        self._generate_async(script.full_text, voice, output_path)
+                    )
+
+                    if not output_path.exists():
+                        raise VoiceGenerationError("Audio file was not created")
+
+                    file_size = output_path.stat().st_size
+                    if file_size < 1000:
+                        raise VoiceGenerationError(
+                            f"Audio file too small ({file_size} bytes)"
+                        )
+
+                    result = VoiceResult(
+                        audio_path=output_path,
+                        duration_s=duration,
+                        voice_id=voice,
+                    )
+
+                    logger.info(
+                        "voice_generated",
+                        path=str(output_path),
+                        duration_s=duration,
+                        size_bytes=file_size,
+                        voice=voice,
+                    )
+                    return result
+
+                except Exception as e:
+                    last_error = e
+                    if output_path.exists():
+                        output_path.unlink(missing_ok=True)
+                    logger.warning(
+                        "voice_attempt_failed",
+                        error=str(e),
+                        attempt=attempt_counter,
+                        max_attempts=total_attempts,
+                        voice_attempt=voice_attempt,
+                        retries_per_voice=self.RETRIES_PER_VOICE,
+                        voice=voice,
+                    )
 
         logger.error("voice_generation_failed", error=str(last_error))
         raise VoiceGenerationError(
-            f"Failed to generate audio after {len(voice_retry_order)} attempts:"
-            f" {last_error}"
+            f"Failed to generate audio after {total_attempts} attempts: {last_error}"
         )
 
     def _build_voice_retry_order(self, niche: NicheConfig) -> list[str]:
-        """Build retry order from the approved voice priority list only."""
-        return list(self.VOICE_PRIORITY)
+        """Build retry order using niche voice first, then universal fallback."""
+        retry_order = [niche.tts_voice]
+        if niche.tts_voice != self.UNIVERSAL_FALLBACK_VOICE:
+            retry_order.append(self.UNIVERSAL_FALLBACK_VOICE)
+        return retry_order
 
     async def _generate_async(
         self,
