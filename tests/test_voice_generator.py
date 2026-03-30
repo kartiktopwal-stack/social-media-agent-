@@ -24,20 +24,23 @@ def _sample_niche(voice: str) -> NicheConfig:
     )
 
 
-def test_build_voice_retry_order_prioritizes_niche_and_deduplicates() -> None:
+def test_build_voice_retry_order_uses_approved_priority_only() -> None:
     generator = VoiceGenerator()
-    niche = _sample_niche("en-US-AriaNeural")
+    niche = _sample_niche("en-US-DavisNeural")
 
     order = generator._build_voice_retry_order(niche)
 
-    assert order[0] == "en-US-AriaNeural"
-    assert len(order) == len(set(order))
+    assert order == [
+        "en-US-AriaNeural",
+        "en-US-GuyNeural",
+        "en-US-JennyNeural",
+    ]
 
 
-def test_generate_uses_niche_voice_first(tmp_path: Path) -> None:
+def test_generate_uses_voice_priority_first(tmp_path: Path) -> None:
     generator = VoiceGenerator()
     script = _sample_script()
-    niche = _sample_niche("en-US-AriaNeural")
+    niche = _sample_niche("en-US-DavisNeural")
     attempted_voices: list[str] = []
 
     async def fake_generate_async(text: str, voice: str, output_path: Path) -> float:

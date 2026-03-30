@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 import uuid
 from pathlib import Path
 
@@ -28,14 +29,22 @@ from src.utils.models import (
 
 logger = get_logger("subtitle_generator")
 
-IMAGEMAGICK_BINARY = (
+_WINDOWS_IMAGEMAGICK_PATH = (
     r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
 )
 
 # Configure MoviePy ImageMagick path before any TextClip usage.
+if Path(_WINDOWS_IMAGEMAGICK_PATH).exists():
+    IMAGEMAGICK_BINARY = _WINDOWS_IMAGEMAGICK_PATH
+else:
+    magick_path = shutil.which("magick")
+    if not magick_path:
+        raise Exception("ImageMagick not found in PATH")
+    IMAGEMAGICK_BINARY = magick_path
+
 change_settings({"IMAGEMAGICK_BINARY": IMAGEMAGICK_BINARY})
-logger.debug(
-    "imagemagick_binary_configured",
+logger.info(
+    "imagemagick_path_detected",
     imagemagick_binary=IMAGEMAGICK_BINARY,
 )
 
