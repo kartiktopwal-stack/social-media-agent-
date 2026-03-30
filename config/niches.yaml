@@ -49,7 +49,7 @@ niches:
       - personalfinance
     youtube_category_id: "22"
     news_category: business
-    tts_voice: "en-US-DavisNeural"
+    tts_voice: "en-US-GuyNeural"
     script_style: breaking_news
     posting_times:
       youtube: 10

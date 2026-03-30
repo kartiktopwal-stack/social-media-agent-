@@ -22,7 +22,7 @@ logger = get_logger("voice_generator")
 class VoiceGenerator:
     """Generate voice-overs from script text using edge-tts."""
 
-    _DEFAULT_VOICE_RETRY_ORDER = [
+    VOICE_PRIORITY = [
         "en-US-AriaNeural",
         "en-US-GuyNeural",
         "en-US-JennyNeural",
@@ -98,16 +98,8 @@ class VoiceGenerator:
         )
 
     def _build_voice_retry_order(self, niche: NicheConfig) -> list[str]:
-        """Build retry order with niche/settings voices first, then safe defaults."""
-        retry_order: list[str] = []
-        for voice in (
-            niche.tts_voice,
-            settings.tts_voice,
-            *self._DEFAULT_VOICE_RETRY_ORDER,
-        ):
-            if voice and voice not in retry_order:
-                retry_order.append(voice)
-        return retry_order
+        """Build retry order from the approved voice priority list only."""
+        return list(self.VOICE_PRIORITY)
 
     async def _generate_async(
         self,
