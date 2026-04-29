@@ -7,7 +7,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-from src.ai.gemini_client import generate_caption
+from src.ai.groq_client import generate_caption
 from src.publishers.instagram_publisher import post_image
 
 PEXELS_SEARCH_URL = "https://api.pexels.com/v1/search"

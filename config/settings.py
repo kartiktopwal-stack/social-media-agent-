@@ -6,6 +6,10 @@ Typed, validated application settings powered by Pydantic.
 
 from __future__ import annotations
 
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
+
 from pathlib import Path
 from typing import Literal
 
@@ -33,14 +37,9 @@ class Settings(BaseSettings):
     supabase_service_key: str = ""
     database_url: str = f"sqlite:///{_PROJECT_ROOT / 'data' / 'content_empire.db'}"
 
-    # ── Redis / Celery ────────────────────────────────────────────────────
-    redis_url: str = "redis://localhost:6379/0"
-    celery_broker_url: str = "redis://localhost:6379/0"
-    celery_result_backend: str = "redis://localhost:6379/1"
-
-    # ── AI / LLM (Gemini) ────────────────────────────────────────────────
-    gemini_api_key: str = ""
-    ai_model: str = "gemini-1.5-flash"
+    # ── AI / LLM (Groq) ──────────────────────────────────────────────────
+    groq_api_key: str = ""
+    ai_model: str = "llama-3.3-70b-versatile"
     ai_max_tokens: int = 2000
 
     # ── AI / LLM (NVIDIA Nemotron) ────────────────────────────────────────
@@ -52,10 +51,13 @@ class Settings(BaseSettings):
 
     # ── Trend Sources ─────────────────────────────────────────────────────
     news_api_key: str = ""
+    serpapi_key: str = ""
     reddit_client_id: str = ""
     reddit_client_secret: str = ""
     reddit_user_agent: str = "ContentEmpire/1.0"
     youtube_api_key: str = ""
+    twitter_api_key: str = ""
+    twitter_api_secret: str = ""
 
     # ── Video / Visuals ───────────────────────────────────────────────────
     pexels_api_key: str = ""
@@ -66,19 +68,6 @@ class Settings(BaseSettings):
     youtube_client_id: str = ""
     youtube_client_secret: str = ""
 
-    # ── Publishing — Meta ─────────────────────────────────────────────────
-    meta_app_id: str = ""
-    meta_app_secret: str = ""
-
-    # ── Publishing — TikTok ───────────────────────────────────────────────
-    tiktok_client_key: str = ""
-    tiktok_client_secret: str = ""
-
-    # ── Publishing — X/Twitter ────────────────────────────────────────────
-    twitter_api_key: str = ""
-    twitter_api_secret: str = ""
-    twitter_access_token: str = ""
-    twitter_access_token_secret: str = ""
 
     # ── Storage ───────────────────────────────────────────────────────────
     object_storage_backend: Literal["s3", "local"] = "local"

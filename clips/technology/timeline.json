@@ -1,0 +1,3345 @@
+{
+  "source_url": "https://youtube.com/watch?v=kGc6k7EEDsE",
+  "source_video": "clips\\technology\\source_video.mp4",
+  "timeline": [
+    {
+      "time": 0,
+      "word": "Deepseek just shipped",
+      "scene_start": true,
+      "energy_rms": 0.5673
+    },
+    {
+      "time": 1,
+      "word": "V4, and honestly",
+      "scene_start": false,
+      "energy_rms": 0.685
+    },
+    {
+      "time": 2,
+      "word": "this release",
+      "scene_start": false,
+      "energy_rms": 0.8564
+    },
+    {
+      "time": 3,
+      "word": "is the open source",
+      "scene_start": false,
+      "energy_rms": 0.741
+    },
+    {
+      "time": 4,
+      "word": "moment a lot of",
+      "scene_start": false,
+      "energy_rms": 0.7652
+    },
+    {
+      "time": 5,
+      "word": "people have been waiting for",
+      "scene_start": false,
+      "energy_rms": 0.6844
+    },
+    {
+      "time": 6,
+      "word": "since R1.",
+      "scene_start": false,
+      "energy_rms": 0.5366
+    },
+    {
+      "time": 7,
+      "word": "There are two models",
+      "scene_start": false,
+      "energy_rms": 0.7756
+    },
+    {
+      "time": 8,
+      "word": "in the family.",
+      "scene_start": false,
+      "energy_rms": 0.3775
+    },
+    {
+      "time": 9,
+      "word": "The bigger one is V4",
+      "scene_start": false,
+      "energy_rms": 0.641
+    },
+    {
+      "time": 10,
+      "word": "Pro, sitting",
+      "scene_start": false,
+      "energy_rms": 0.4167
+    },
+    {
+      "time": 11,
+      "word": "at 1 .6",
+      "scene_start": false,
+      "energy_rms": 0.7033
+    },
+    {
+      "time": 12,
+      "word": "trillion total",
+      "scene_start": false,
+      "energy_rms": 0.7097
+    },
+    {
+      "time": 13,
+      "word": "parameters with 49",
+      "scene_start": false,
+      "energy_rms": 0.6208
+    },
+    {
+      "time": 14,
+      "word": "billion active",
+      "scene_start": false,
+      "energy_rms": 0.7886
+    },
+    {
+      "time": 15,
+      "word": "per token.",
+      "scene_start": false,
+      "energy_rms": 0.4485
+    },
+    {
+      "time": 16,
+      "word": "The smaller one is",
+      "scene_start": false,
+      "energy_rms": 0.7545
+    },
+    {
+      "time": 17,
+      "word": "V4 Flash,",
+      "scene_start": false,
+      "energy_rms": 0.7283
+    },
+    {
+      "time": 18,
+      "word": "at 284",
+      "scene_start": false,
+      "energy_rms": 0.6669
+    },
+    {
+      "time": 19,
+      "word": "billion total",
+      "scene_start": false,
+      "energy_rms": 0.8463
+    },
+    {
+      "time": 20,
+      "word": "with 13 billion",
+      "scene_start": false,
+      "energy_rms": 0.7872
+    },
+    {
+      "time": 21,
+      "word": "active. Both",
+      "scene_start": false,
+      "energy_rms": 0.3767
+    },
+    {
+      "time": 22,
+      "word": "are mixture of experts,",
+      "scene_start": false,
+      "energy_rms": 0.6833
+    },
+    {
+      "time": 23,
+      "word": "both ship",
+      "scene_start": false,
+      "energy_rms": 0.4386
+    },
+    {
+      "time": 24,
+      "word": "with a 1 million token",
+      "scene_start": false,
+      "energy_rms": 0.547
+    },
+    {
+      "time": 25,
+      "word": "context window",
+      "scene_start": false,
+      "energy_rms": 0.4271
+    },
+    {
+      "time": 26,
+      "word": "by default,",
+      "scene_start": false,
+      "energy_rms": 0.5504
+    },
+    {
+      "time": 27,
+      "word": "and both come under the",
+      "scene_start": false,
+      "energy_rms": 0.8088
+    },
+    {
+      "time": 28,
+      "word": "MIT license. Which",
+      "scene_start": false,
+      "energy_rms": 0.536
+    },
+    {
+      "time": 29,
+      "word": "means you can take",
+      "scene_start": false,
+      "energy_rms": 0.7128
+    },
+    {
+      "time": 30,
+      "word": "the weights, fine",
+      "scene_start": false,
+      "energy_rms": 0.5217
+    },
+    {
+      "time": 31,
+      "word": "tune them, and put",
+      "scene_start": false,
+      "energy_rms": 0.7742
+    },
+    {
+      "time": 32,
+      "word": "them in a commercial product",
+      "scene_start": false,
+      "energy_rms": 0.6684
+    },
+    {
+      "time": 33,
+      "word": "without asking",
+      "scene_start": true,
+      "energy_rms": 0.6886
+    },
+    {
+      "time": 34,
+      "word": "anyone for permission.",
+      "scene_start": false,
+      "energy_rms": 0.5915
+    },
+    {
+      "time": 35,
+      "word": "V4 Pro",
+      "scene_start": false,
+      "energy_rms": 0.511
+    },
+    {
+      "time": 36,
+      "word": "is now officially",
+      "scene_start": false,
+      "energy_rms": 0.8021
+    },
+    {
+      "time": 37,
+      "word": "the largest open",
+      "scene_start": false,
+      "energy_rms": 0.5712
+    },
+    {
+      "time": 38,
+      "word": "weight model that has ever",
+      "scene_start": false,
+      "energy_rms": 0.6039
+    },
+    {
+      "time": 39,
+      "word": "been released.",
+      "scene_start": false,
+      "energy_rms": 0.6292
+    },
+    {
+      "time": 40,
+      "word": "V4 Pro",
+      "scene_start": false,
+      "energy_rms": 0.6312
+    },
+    {
+      "time": 41,
+      "word": "was pre -trained on",
+      "scene_start": false,
+      "energy_rms": 0.5577
+    },
+    {
+      "time": 42,
+      "word": "33 trillion",
+      "scene_start": false,
+      "energy_rms": 0.6644
+    },
+    {
+      "time": 43,
+      "word": "tokens and",
+      "scene_start": false,
+      "energy_rms": 0.5366
+    },
+    {
+      "time": 44,
+      "word": "Flash on roughly",
+      "scene_start": false,
+      "energy_rms": 0.8277
+    },
+    {
+      "time": 45,
+      "word": "32 trillion,",
+      "scene_start": false,
+      "energy_rms": 0.6441
+    },
+    {
+      "time": 46,
+      "word": "so they are sitting",
+      "scene_start": false,
+      "energy_rms": 0.6824
+    },
+    {
+      "time": 47,
+      "word": "on a similar data",
+      "scene_start": false,
+      "energy_rms": 0.5887
+    },
+    {
+      "time": 48,
+      "word": "foundation just",
+      "scene_start": false,
+      "energy_rms": 0.6886
+    },
+    {
+      "time": 49,
+      "word": "with a very different",
+      "scene_start": false,
+      "energy_rms": 0.8049
+    },
+    {
+      "time": 50,
+      "word": "parameter budget. Okay,",
+      "scene_start": false,
+      "energy_rms": 0.3939
+    },
+    {
+      "time": 51,
+      "word": "so the part",
+      "scene_start": false,
+      "energy_rms": 0.7736
+    },
+    {
+      "time": 52,
+      "word": "that actually matters for",
+      "scene_start": false,
+      "energy_rms": 0.6765
+    },
+    {
+      "time": 53,
+      "word": "your wallet?",
+      "scene_start": false,
+      "energy_rms": 0.52
+    },
+    {
+      "time": 54,
+      "word": "At a 1 million token",
+      "scene_start": true,
+      "energy_rms": 0.7142
+    },
+    {
+      "time": 55,
+      "word": "context,",
+      "scene_start": false,
+      "energy_rms": 0.4139
+    },
+    {
+      "time": 56,
+      "word": "V4 Pro uses",
+      "scene_start": false,
+      "energy_rms": 0.6346
+    },
+    {
+      "time": 57,
+      "word": "about 27 %",
+      "scene_start": false,
+      "energy_rms": 0.6042
+    },
+    {
+      "time": 58,
+      "word": "of the per token",
+      "scene_start": false,
+      "energy_rms": 0.5048
+    },
+    {
+      "time": 59,
+      "word": "inference flops compared",
+      "scene_start": false,
+      "energy_rms": 0.5608
+    },
+    {
+      "time": 60,
+      "word": "to V3 .2",
+      "scene_start": false,
+      "energy_rms": 0.5946
+    },
+    {
+      "time": 61,
+      "word": "and only",
+      "scene_start": false,
+      "energy_rms": 0.5132
+    },
+    {
+      "time": 62,
+      "word": "10 % of",
+      "scene_start": false,
+      "energy_rms": 0.6754
+    },
+    {
+      "time": 63,
+      "word": "the KV cache.",
+      "scene_start": false,
+      "energy_rms": 0.5704
+    },
+    {
+      "time": 64,
+      "word": "The Flash model",
+      "scene_start": false,
+      "energy_rms": 0.7055
+    },
+    {
+      "time": 65,
+      "word": "is even more",
+      "scene_start": false,
+      "energy_rms": 0.6509
+    },
+    {
+      "time": 66,
+      "word": "aggressive,",
+      "scene_start": false,
+      "energy_rms": 0.4386
+    },
+    {
+      "time": 67,
+      "word": "using around 10 %",
+      "scene_start": false,
+      "energy_rms": 0.8032
+    },
+    {
+      "time": 68,
+      "word": "of the flops and",
+      "scene_start": false,
+      "energy_rms": 0.5867
+    },
+    {
+      "time": 69,
+      "word": "only about 7",
+      "scene_start": false,
+      "energy_rms": 0.7047
+    },
+    {
+      "time": 70,
+      "word": "% of the KV",
+      "scene_start": false,
+      "energy_rms": 0.518
+    },
+    {
+      "time": 71,
+      "word": "cache for the",
+      "scene_start": false,
+      "energy_rms": 0.4406
+    },
+    {
+      "time": 72,
+      "word": "same context length.",
+      "scene_start": false,
+      "energy_rms": 0.6816
+    },
+    {
+      "time": 73,
+      "word": "That is",
+      "scene_start": false,
+      "energy_rms": 0.5518
+    },
+    {
+      "time": 74,
+      "word": "not a tweak, that",
+      "scene_start": false,
+      "energy_rms": 0.4916
+    },
+    {
+      "time": 75,
+      "word": "is an order of magnitude",
+      "scene_start": false,
+      "energy_rms": 0.7176
+    },
+    {
+      "time": 76,
+      "word": "jump on the",
+      "scene_start": false,
+      "energy_rms": 0.4153
+    },
+    {
+      "time": 77,
+      "word": "memory side. The",
+      "scene_start": false,
+      "energy_rms": 0.5127
+    },
+    {
+      "time": 78,
+      "word": "reason is the",
+      "scene_start": false,
+      "energy_rms": 0.6864
+    },
+    {
+      "time": 79,
+      "word": "new hybrid attention",
+      "scene_start": false,
+      "energy_rms": 0.7365
+    },
+    {
+      "time": 80,
+      "word": "setup. They",
+      "scene_start": false,
+      "energy_rms": 0.3221
+    },
+    {
+      "time": 81,
+      "word": "built something they call compressed",
+      "scene_start": false,
+      "energy_rms": 0.5636
+    },
+    {
+      "time": 82,
+      "word": "sparse",
+      "scene_start": false,
+      "energy_rms": 0.4859
+    },
+    {
+      "time": 83,
+      "word": "attention combined",
+      "scene_start": false,
+      "energy_rms": 0.413
+    },
+    {
+      "time": 84,
+      "word": "with heavily compressed",
+      "scene_start": false,
+      "energy_rms": 0.6135
+    },
+    {
+      "time": 85,
+      "word": "attention.",
+      "scene_start": false,
+      "energy_rms": 0.2486
+    },
+    {
+      "time": 86,
+      "word": "CSA basically",
+      "scene_start": false,
+      "energy_rms": 0.6599
+    },
+    {
+      "time": 87,
+      "word": "picks the top",
+      "scene_start": false,
+      "energy_rms": 0.5422
+    },
+    {
+      "time": 88,
+      "word": "-cate chunks of the context",
+      "scene_start": false,
+      "energy_rms": 0.5918
+    },
+    {
+      "time": 89,
+      "word": "that actually",
+      "scene_start": false,
+      "energy_rms": 0.6349
+    },
+    {
+      "time": 90,
+      "word": "matter. HCA",
+      "scene_start": false,
+      "energy_rms": 0.7081
+    },
+    {
+      "time": 91,
+      "word": "is a denser",
+      "scene_start": false,
+      "energy_rms": 0.7827
+    },
+    {
+      "time": 92,
+      "word": "pass but unheavily",
+      "scene_start": false,
+      "energy_rms": 0.7173
+    },
+    {
+      "time": 93,
+      "word": "reduced inputs.",
+      "scene_start": false,
+      "energy_rms": 0.7092
+    },
+    {
+      "time": 94,
+      "word": "They also",
+      "scene_start": true,
+      "energy_rms": 0.4082
+    },
+    {
+      "time": 95,
+      "word": "keep a small sliding",
+      "scene_start": false,
+      "energy_rms": 0.6256
+    },
+    {
+      "time": 96,
+      "word": "window for recent",
+      "scene_start": false,
+      "energy_rms": 0.565
+    },
+    {
+      "time": 97,
+      "word": "tokens and use",
+      "scene_start": false,
+      "energy_rms": 0.547
+    },
+    {
+      "time": 98,
+      "word": "learnable attention sinks",
+      "scene_start": false,
+      "energy_rms": 0.7751
+    },
+    {
+      "time": 99,
+      "word": "to hold the lodged",
+      "scene_start": false,
+      "energy_rms": 0.5994
+    },
+    {
+      "time": 100,
+      "word": "stable. The",
+      "scene_start": false,
+      "energy_rms": 0.4459
+    },
+    {
+      "time": 101,
+      "word": "whole point is",
+      "scene_start": false,
+      "energy_rms": 0.6174
+    },
+    {
+      "time": 102,
+      "word": "to break the quadratic",
+      "scene_start": false,
+      "energy_rms": 0.5915
+    },
+    {
+      "time": 103,
+      "word": "wall that kills long",
+      "scene_start": false,
+      "energy_rms": 0.6242
+    },
+    {
+      "time": 104,
+      "word": "context inference",
+      "scene_start": false,
+      "energy_rms": 0.6225
+    },
+    {
+      "time": 105,
+      "word": "everywhere else.",
+      "scene_start": false,
+      "energy_rms": 0.518
+    },
+    {
+      "time": 106,
+      "word": "There is more under",
+      "scene_start": false,
+      "energy_rms": 0.9721
+    },
+    {
+      "time": 107,
+      "word": "the hood.",
+      "scene_start": true,
+      "energy_rms": 0.5726
+    },
+    {
+      "time": 108,
+      "word": "They replaced Adam W",
+      "scene_start": false,
+      "energy_rms": 0.6926
+    },
+    {
+      "time": 109,
+      "word": "with the Mew Unoptimizer",
+      "scene_start": false,
+      "energy_rms": 0.5847
+    },
+    {
+      "time": 110,
+      "word": "for most",
+      "scene_start": false,
+      "energy_rms": 0.5428
+    },
+    {
+      "time": 111,
+      "word": "of the training,",
+      "scene_start": false,
+      "energy_rms": 0.6185
+    },
+    {
+      "time": 112,
+      "word": "which uses Newton's",
+      "scene_start": false,
+      "energy_rms": 0.8074
+    },
+    {
+      "time": 113,
+      "word": "Shoulds iterations to keep",
+      "scene_start": false,
+      "energy_rms": 0.6399
+    },
+    {
+      "time": 114,
+      "word": "the singular values",
+      "scene_start": false,
+      "energy_rms": 0.8525
+    },
+    {
+      "time": 115,
+      "word": "of the gradient matrix close",
+      "scene_start": false,
+      "energy_rms": 0.58
+    },
+    {
+      "time": 116,
+      "word": "to 1.",
+      "scene_start": false,
+      "energy_rms": 0.7264
+    },
+    {
+      "time": 117,
+      "word": "That gave them faster",
+      "scene_start": false,
+      "energy_rms": 0.5732
+    },
+    {
+      "time": 118,
+      "word": "convergence and",
+      "scene_start": false,
+      "energy_rms": 0.5645
+    },
+    {
+      "time": 119,
+      "word": "more stable training",
+      "scene_start": false,
+      "energy_rms": 0.6599
+    },
+    {
+      "time": 120,
+      "word": "at the trillion parameter",
+      "scene_start": false,
+      "energy_rms": 0.6703
+    },
+    {
+      "time": 121,
+      "word": "scale. They",
+      "scene_start": false,
+      "energy_rms": 0.3392
+    },
+    {
+      "time": 122,
+      "word": "also brought in something",
+      "scene_start": false,
+      "energy_rms": 0.7235
+    },
+    {
+      "time": 123,
+      "word": "called manifold constrained",
+      "scene_start": false,
+      "energy_rms": 0.5566
+    },
+    {
+      "time": 124,
+      "word": "hyperconnections",
+      "scene_start": false,
+      "energy_rms": 0.4406
+    },
+    {
+      "time": 125,
+      "word": "to widen",
+      "scene_start": false,
+      "energy_rms": 0.5842
+    },
+    {
+      "time": 126,
+      "word": "the residual stream",
+      "scene_start": false,
+      "energy_rms": 0.6546
+    },
+    {
+      "time": 127,
+      "word": "into four parallel",
+      "scene_start": false,
+      "energy_rms": 0.6847
+    },
+    {
+      "time": 128,
+      "word": "paths while keeping",
+      "scene_start": false,
+      "energy_rms": 0.5574
+    },
+    {
+      "time": 129,
+      "word": "signal amplification",
+      "scene_start": false,
+      "energy_rms": 0.6298
+    },
+    {
+      "time": 130,
+      "word": "under control.",
+      "scene_start": false,
+      "energy_rms": 0.5152
+    },
+    {
+      "time": 131,
+      "word": "In their own",
+      "scene_start": false,
+      "energy_rms": 0.6729
+    },
+    {
+      "time": 132,
+      "word": "ablations, the",
+      "scene_start": false,
+      "energy_rms": 0.6447
+    },
+    {
+      "time": 133,
+      "word": "unconstrained version",
+      "scene_start": false,
+      "energy_rms": 0.6703
+    },
+    {
+      "time": 134,
+      "word": "blew up to 3",
+      "scene_start": false,
+      "energy_rms": 0.5935
+    },
+    {
+      "time": 135,
+      "word": ",000x amplification",
+      "scene_start": false,
+      "energy_rms": 0.4913
+    },
+    {
+      "time": 136,
+      "word": "and",
+      "scene_start": false,
+      "energy_rms": 0.4977
+    },
+    {
+      "time": 137,
+      "word": "crashed training.",
+      "scene_start": false,
+      "energy_rms": 0.6137
+    },
+    {
+      "time": 138,
+      "word": "The constrained version sits",
+      "scene_start": false,
+      "energy_rms": 0.7328
+    },
+    {
+      "time": 139,
+      "word": "at 1 .6x,",
+      "scene_start": false,
+      "energy_rms": 0.6408
+    },
+    {
+      "time": 140,
+      "word": "which",
+      "scene_start": false,
+      "energy_rms": 0.4032
+    },
+    {
+      "time": 141,
+      "word": "is what let them push to",
+      "scene_start": false,
+      "energy_rms": 0.7714
+    },
+    {
+      "time": 142,
+      "word": "1 .6 trillion",
+      "scene_start": false,
+      "energy_rms": 0.5405
+    },
+    {
+      "time": 143,
+      "word": "parameters without",
+      "scene_start": false,
+      "energy_rms": 0.7551
+    },
+    {
+      "time": 144,
+      "word": "the lost spike disaster",
+      "scene_start": false,
+      "energy_rms": 0.6185
+    },
+    {
+      "time": 145,
+      "word": "you usually see",
+      "scene_start": false,
+      "energy_rms": 0.6681
+    },
+    {
+      "time": 146,
+      "word": "at this scale. For",
+      "scene_start": false,
+      "energy_rms": 0.5222
+    },
+    {
+      "time": 147,
+      "word": "training stability,",
+      "scene_start": false,
+      "energy_rms": 0.5988
+    },
+    {
+      "time": 148,
+      "word": "they also added",
+      "scene_start": false,
+      "energy_rms": 0.7466
+    },
+    {
+      "time": 149,
+      "word": "what they call anticipatory",
+      "scene_start": false,
+      "energy_rms": 0.5974
+    },
+    {
+      "time": 150,
+      "word": "routing,",
+      "scene_start": false,
+      "energy_rms": 0.574
+    },
+    {
+      "time": 151,
+      "word": "where the MAW",
+      "scene_start": false,
+      "energy_rms": 0.5766
+    },
+    {
+      "time": 152,
+      "word": "router uses",
+      "scene_start": false,
+      "energy_rms": 0.7925
+    },
+    {
+      "time": 153,
+      "word": "slightly older",
+      "scene_start": false,
+      "energy_rms": 0.6869
+    },
+    {
+      "time": 154,
+      "word": "weights so the",
+      "scene_start": false,
+      "energy_rms": 0.6819
+    },
+    {
+      "time": 155,
+      "word": "routing decisions do",
+      "scene_start": false,
+      "energy_rms": 0.7354
+    },
+    {
+      "time": 156,
+      "word": "not feed back into",
+      "scene_start": false,
+      "energy_rms": 0.5676
+    },
+    {
+      "time": 157,
+      "word": "themselves and",
+      "scene_start": false,
+      "energy_rms": 0.5557
+    },
+    {
+      "time": 158,
+      "word": "amplify outliers.",
+      "scene_start": false,
+      "energy_rms": 0.6833
+    },
+    {
+      "time": 159,
+      "word": "They",
+      "scene_start": false,
+      "energy_rms": 0.4077
+    },
+    {
+      "time": 160,
+      "word": "put a clamp on",
+      "scene_start": false,
+      "energy_rms": 0.6301
+    },
+    {
+      "time": 161,
+      "word": "the sweet glue gate to",
+      "scene_start": false,
+      "energy_rms": 0.5383
+    },
+    {
+      "time": 162,
+      "word": "stop activations",
+      "scene_start": false,
+      "energy_rms": 0.6588
+    },
+    {
+      "time": 163,
+      "word": "from exploding too.",
+      "scene_start": false,
+      "energy_rms": 0.7182
+    },
+    {
+      "time": 164,
+      "word": "None of",
+      "scene_start": false,
+      "energy_rms": 0.46
+    },
+    {
+      "time": 165,
+      "word": "this is sexy on",
+      "scene_start": false,
+      "energy_rms": 0.612
+    },
+    {
+      "time": 166,
+      "word": "a thumbnail, but",
+      "scene_start": false,
+      "energy_rms": 0.5163
+    },
+    {
+      "time": 167,
+      "word": "it is the reason",
+      "scene_start": false,
+      "energy_rms": 0.8854
+    },
+    {
+      "time": 168,
+      "word": "a 1 .6",
+      "scene_start": false,
+      "energy_rms": 0.5329
+    },
+    {
+      "time": 169,
+      "word": "trillion parameter",
+      "scene_start": false,
+      "energy_rms": 0.6087
+    },
+    {
+      "time": 170,
+      "word": "MAW actually",
+      "scene_start": false,
+      "energy_rms": 0.6917
+    },
+    {
+      "time": 171,
+      "word": "finished",
+      "scene_start": false,
+      "energy_rms": 0.5436
+    },
+    {
+      "time": 172,
+      "word": "training in one",
+      "scene_start": false,
+      "energy_rms": 0.6222
+    },
+    {
+      "time": 173,
+      "word": "piece. Pricing",
+      "scene_start": false,
+      "energy_rms": 0.5343
+    },
+    {
+      "time": 174,
+      "word": "is the part",
+      "scene_start": false,
+      "energy_rms": 0.6585
+    },
+    {
+      "time": 175,
+      "word": "that is going to make every",
+      "scene_start": false,
+      "energy_rms": 0.6785
+    },
+    {
+      "time": 176,
+      "word": "API team",
+      "scene_start": false,
+      "energy_rms": 0.7714
+    },
+    {
+      "time": 177,
+      "word": "reconsider their",
+      "scene_start": false,
+      "energy_rms": 0.7142
+    },
+    {
+      "time": 178,
+      "word": "stack on Monday",
+      "scene_start": false,
+      "energy_rms": 0.7064
+    },
+    {
+      "time": 179,
+      "word": "morning.",
+      "scene_start": false,
+      "energy_rms": 0.5324
+    },
+    {
+      "time": 180,
+      "word": "V4 Pro is",
+      "scene_start": false,
+      "energy_rms": 0.6957
+    },
+    {
+      "time": 181,
+      "word": "around $1 .75",
+      "scene_start": false,
+      "energy_rms": 0.5802
+    },
+    {
+      "time": 182,
+      "word": "per",
+      "scene_start": false,
+      "energy_rms": 0.5245
+    },
+    {
+      "time": 183,
+      "word": "million input tokens",
+      "scene_start": false,
+      "energy_rms": 0.5566
+    },
+    {
+      "time": 184,
+      "word": "on a cashmiss,",
+      "scene_start": false,
+      "energy_rms": 0.4758
+    },
+    {
+      "time": 185,
+      "word": "with cash hit",
+      "scene_start": false,
+      "energy_rms": 0.5921
+    },
+    {
+      "time": 186,
+      "word": "dropping to about $0",
+      "scene_start": false,
+      "energy_rms": 0.6596
+    },
+    {
+      "time": 187,
+      "word": ".15. An",
+      "scene_start": false,
+      "energy_rms": 0.2528
+    },
+    {
+      "time": 188,
+      "word": "output sits near",
+      "scene_start": false,
+      "energy_rms": 0.6295
+    },
+    {
+      "time": 189,
+      "word": "$3 .50",
+      "scene_start": false,
+      "energy_rms": 0.616
+    },
+    {
+      "time": 190,
+      "word": "to $4",
+      "scene_start": false,
+      "energy_rms": 0.5693
+    },
+    {
+      "time": 191,
+      "word": ".00 per million.",
+      "scene_start": false,
+      "energy_rms": 0.5006
+    },
+    {
+      "time": 192,
+      "word": "Flash is way",
+      "scene_start": true,
+      "energy_rms": 0.6287
+    },
+    {
+      "time": 193,
+      "word": "cheaper with input",
+      "scene_start": false,
+      "energy_rms": 0.6174
+    },
+    {
+      "time": 194,
+      "word": "at $0 .14 per",
+      "scene_start": false,
+      "energy_rms": 0.752
+    },
+    {
+      "time": 195,
+      "word": "million and",
+      "scene_start": false,
+      "energy_rms": 0.5794
+    },
+    {
+      "time": 196,
+      "word": "output at $0 .28.",
+      "scene_start": false,
+      "energy_rms": 0.6182
+    },
+    {
+      "time": 197,
+      "word": "Compare",
+      "scene_start": true,
+      "energy_rms": 0.306
+    },
+    {
+      "time": 198,
+      "word": "that to GPT",
+      "scene_start": false,
+      "energy_rms": 0.6855
+    },
+    {
+      "time": 199,
+      "word": "5 .5 sitting",
+      "scene_start": false,
+      "energy_rms": 0.665
+    },
+    {
+      "time": 200,
+      "word": "near $1 .75",
+      "scene_start": false,
+      "energy_rms": 0.723
+    },
+    {
+      "time": 201,
+      "word": "input",
+      "scene_start": false,
+      "energy_rms": 0.6672
+    },
+    {
+      "time": 202,
+      "word": "and $14",
+      "scene_start": false,
+      "energy_rms": 0.6501
+    },
+    {
+      "time": 203,
+      "word": "output and",
+      "scene_start": false,
+      "energy_rms": 0.699
+    },
+    {
+      "time": 204,
+      "word": "Claude Opus",
+      "scene_start": true,
+      "energy_rms": 0.6579
+    },
+    {
+      "time": 205,
+      "word": "4 .7 at",
+      "scene_start": false,
+      "energy_rms": 0.6289
+    },
+    {
+      "time": 206,
+      "word": "$5 input",
+      "scene_start": false,
+      "energy_rms": 0.6858
+    },
+    {
+      "time": 207,
+      "word": "and $25",
+      "scene_start": false,
+      "energy_rms": 0.661
+    },
+    {
+      "time": 208,
+      "word": "output.",
+      "scene_start": false,
+      "energy_rms": 0.7306
+    },
+    {
+      "time": 209,
+      "word": "On output",
+      "scene_start": false,
+      "energy_rms": 0.3671
+    },
+    {
+      "time": 210,
+      "word": "tokens,",
+      "scene_start": false,
+      "energy_rms": 0.5535
+    },
+    {
+      "time": 211,
+      "word": "V4 Pro ends up",
+      "scene_start": false,
+      "energy_rms": 0.6273
+    },
+    {
+      "time": 212,
+      "word": "roughly 1 .6",
+      "scene_start": false,
+      "energy_rms": 0.5648
+    },
+    {
+      "time": 213,
+      "word": "the cost of Opus",
+      "scene_start": false,
+      "energy_rms": 0.5569
+    },
+    {
+      "time": 214,
+      "word": "4 .7 and",
+      "scene_start": false,
+      "energy_rms": 0.5952
+    },
+    {
+      "time": 215,
+      "word": "about 1 .7",
+      "scene_start": false,
+      "energy_rms": 0.8522
+    },
+    {
+      "time": 216,
+      "word": "the cost of GPT",
+      "scene_start": false,
+      "energy_rms": 0.5732
+    },
+    {
+      "time": 217,
+      "word": "5 .5.",
+      "scene_start": false,
+      "energy_rms": 0.5712
+    },
+    {
+      "time": 218,
+      "word": "With cash",
+      "scene_start": false,
+      "energy_rms": 0.4977
+    },
+    {
+      "time": 219,
+      "word": "hits, that gap stretches",
+      "scene_start": false,
+      "energy_rms": 0.5225
+    },
+    {
+      "time": 220,
+      "word": "to nearly 1",
+      "scene_start": false,
+      "energy_rms": 0.5476
+    },
+    {
+      "time": 221,
+      "word": ".10. Flash",
+      "scene_start": false,
+      "energy_rms": 0.2238
+    },
+    {
+      "time": 222,
+      "word": "on its own is almost",
+      "scene_start": false,
+      "energy_rms": 0.7796
+    },
+    {
+      "time": 223,
+      "word": "100x",
+      "scene_start": false,
+      "energy_rms": 0.5583
+    },
+    {
+      "time": 224,
+      "word": "cheaper than the",
+      "scene_start": false,
+      "energy_rms": 0.5056
+    },
+    {
+      "time": 225,
+      "word": "western frontier models",
+      "scene_start": false,
+      "energy_rms": 0.5856
+    },
+    {
+      "time": 226,
+      "word": "on raw input plus",
+      "scene_start": false,
+      "energy_rms": 0.5859
+    },
+    {
+      "time": 227,
+      "word": "output math.",
+      "scene_start": true,
+      "energy_rms": 0.4206
+    },
+    {
+      "time": 228,
+      "word": "Now the benchmarks,",
+      "scene_start": true,
+      "energy_rms": 0.6751
+    },
+    {
+      "time": 229,
+      "word": "because this is",
+      "scene_start": false,
+      "energy_rms": 0.527
+    },
+    {
+      "time": 230,
+      "word": "where the picture gets honest,",
+      "scene_start": false,
+      "energy_rms": 0.6782
+    },
+    {
+      "time": 231,
+      "word": "on agentic",
+      "scene_start": false,
+      "energy_rms": 0.4426
+    },
+    {
+      "time": 232,
+      "word": "coding the scores",
+      "scene_start": false,
+      "energy_rms": 0.6571
+    },
+    {
+      "time": 233,
+      "word": "are genuinely close",
+      "scene_start": false,
+      "energy_rms": 0.8891
+    },
+    {
+      "time": 234,
+      "word": "to frontier.",
+      "scene_start": false,
+      "energy_rms": 0.6889
+    },
+    {
+      "time": 235,
+      "word": "V4",
+      "scene_start": false,
+      "energy_rms": 0.4673
+    },
+    {
+      "time": 236,
+      "word": "Pro Max scores",
+      "scene_start": false,
+      "energy_rms": 0.6855
+    },
+    {
+      "time": 237,
+      "word": "80 .6",
+      "scene_start": false,
+      "energy_rms": 0.5802
+    },
+    {
+      "time": 238,
+      "word": "% on SWA",
+      "scene_start": false,
+      "energy_rms": 0.6188
+    },
+    {
+      "time": 239,
+      "word": "Bench verified,",
+      "scene_start": false,
+      "energy_rms": 0.7171
+    },
+    {
+      "time": 240,
+      "word": "which is",
+      "scene_start": false,
+      "energy_rms": 0.6264
+    },
+    {
+      "time": 241,
+      "word": "essentially tied with",
+      "scene_start": false,
+      "energy_rms": 0.7827
+    },
+    {
+      "time": 242,
+      "word": "Claude Opus 4",
+      "scene_start": false,
+      "energy_rms": 0.598
+    },
+    {
+      "time": 243,
+      "word": ".6 at 80",
+      "scene_start": false,
+      "energy_rms": 0.5006
+    },
+    {
+      "time": 244,
+      "word": ".8 and",
+      "scene_start": false,
+      "energy_rms": 0.5766
+    },
+    {
+      "time": 245,
+      "word": "Gemini 3 .1",
+      "scene_start": false,
+      "energy_rms": 0.7514
+    },
+    {
+      "time": 246,
+      "word": "Pro at",
+      "scene_start": false,
+      "energy_rms": 0.6591
+    },
+    {
+      "time": 247,
+      "word": "80 .6.",
+      "scene_start": false,
+      "energy_rms": 0.5146
+    },
+    {
+      "time": 248,
+      "word": "Live code",
+      "scene_start": false,
+      "energy_rms": 0.7559
+    },
+    {
+      "time": 249,
+      "word": "bench is 93 .5%,",
+      "scene_start": false,
+      "energy_rms": 0.6506
+    },
+    {
+      "time": 250,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5724
+    },
+    {
+      "time": 251,
+      "word": "which puts it",
+      "scene_start": false,
+      "energy_rms": 0.6011
+    },
+    {
+      "time": 252,
+      "word": "ahead of Gemini at",
+      "scene_start": false,
+      "energy_rms": 0.8373
+    },
+    {
+      "time": 253,
+      "word": "91 .7",
+      "scene_start": false,
+      "energy_rms": 0.8294
+    },
+    {
+      "time": 254,
+      "word": "and well ahead",
+      "scene_start": false,
+      "energy_rms": 0.7204
+    },
+    {
+      "time": 255,
+      "word": "of Claude at",
+      "scene_start": false,
+      "energy_rms": 0.5605
+    },
+    {
+      "time": 256,
+      "word": "88 .8.",
+      "scene_start": false,
+      "energy_rms": 0.4899
+    },
+    {
+      "time": 257,
+      "word": "On code forces,",
+      "scene_start": false,
+      "energy_rms": 0.5769
+    },
+    {
+      "time": 258,
+      "word": "it hits a rating",
+      "scene_start": false,
+      "energy_rms": 0.4116
+    },
+    {
+      "time": 259,
+      "word": "of 3 .206",
+      "scene_start": false,
+      "energy_rms": 0.522
+    },
+    {
+      "time": 260,
+      "word": "which beats",
+      "scene_start": false,
+      "energy_rms": 0.377
+    },
+    {
+      "time": 261,
+      "word": "GPT 5",
+      "scene_start": false,
+      "energy_rms": 0.5881
+    },
+    {
+      "time": 262,
+      "word": ".4x high",
+      "scene_start": false,
+      "energy_rms": 0.5017
+    },
+    {
+      "time": 263,
+      "word": "at 3",
+      "scene_start": false,
+      "energy_rms": 0.4693
+    },
+    {
+      "time": 264,
+      "word": ".168.",
+      "scene_start": false,
+      "energy_rms": 0.6326
+    },
+    {
+      "time": 265,
+      "word": "So for code",
+      "scene_start": false,
+      "energy_rms": 0.6261
+    },
+    {
+      "time": 266,
+      "word": "generation, competitive",
+      "scene_start": false,
+      "energy_rms": 0.6084
+    },
+    {
+      "time": 267,
+      "word": "programming and",
+      "scene_start": false,
+      "energy_rms": 0.728
+    },
+    {
+      "time": 268,
+      "word": "single shot software",
+      "scene_start": false,
+      "energy_rms": 0.6608
+    },
+    {
+      "time": 269,
+      "word": "tasks,",
+      "scene_start": false,
+      "energy_rms": 0.4552
+    },
+    {
+      "time": 270,
+      "word": "this model is sitting",
+      "scene_start": false,
+      "energy_rms": 0.5352
+    },
+    {
+      "time": 271,
+      "word": "in frontier territory.",
+      "scene_start": false,
+      "energy_rms": 0.4907
+    },
+    {
+      "time": 272,
+      "word": "But against",
+      "scene_start": false,
+      "energy_rms": 0.3891
+    },
+    {
+      "time": 273,
+      "word": "the newer GPT",
+      "scene_start": false,
+      "energy_rms": 0.672
+    },
+    {
+      "time": 274,
+      "word": "5 .5",
+      "scene_start": false,
+      "energy_rms": 0.5245
+    },
+    {
+      "time": 275,
+      "word": "and Opus 4",
+      "scene_start": false,
+      "energy_rms": 0.4977
+    },
+    {
+      "time": 276,
+      "word": ".7,",
+      "scene_start": false,
+      "energy_rms": 0.4761
+    },
+    {
+      "time": 277,
+      "word": "the picture pulls back.",
+      "scene_start": false,
+      "energy_rms": 0.7269
+    },
+    {
+      "time": 278,
+      "word": "On SWE",
+      "scene_start": false,
+      "energy_rms": 0.4282
+    },
+    {
+      "time": 279,
+      "word": "Bench Pro,",
+      "scene_start": true,
+      "energy_rms": 0.7987
+    },
+    {
+      "time": 280,
+      "word": "V4 Pro",
+      "scene_start": false,
+      "energy_rms": 0.692
+    },
+    {
+      "time": 281,
+      "word": "Max gets 55",
+      "scene_start": false,
+      "energy_rms": 0.5414
+    },
+    {
+      "time": 282,
+      "word": ".4%,",
+      "scene_start": false,
+      "energy_rms": 0.6044
+    },
+    {
+      "time": 283,
+      "word": "GPT",
+      "scene_start": false,
+      "energy_rms": 0.4865
+    },
+    {
+      "time": 284,
+      "word": "5 .5 hits",
+      "scene_start": false,
+      "energy_rms": 0.6588
+    },
+    {
+      "time": 285,
+      "word": "58 .6",
+      "scene_start": false,
+      "energy_rms": 0.4983
+    },
+    {
+      "time": 286,
+      "word": "and",
+      "scene_start": false,
+      "energy_rms": 0.585
+    },
+    {
+      "time": 287,
+      "word": "Claude Opus 4",
+      "scene_start": false,
+      "energy_rms": 0.7278
+    },
+    {
+      "time": 288,
+      "word": ".7 leads",
+      "scene_start": false,
+      "energy_rms": 0.5791
+    },
+    {
+      "time": 289,
+      "word": "at 64 .3.",
+      "scene_start": false,
+      "energy_rms": 0.5417
+    },
+    {
+      "time": 290,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5549
+    },
+    {
+      "time": 291,
+      "word": "On terminal bench",
+      "scene_start": false,
+      "energy_rms": 0.6197
+    },
+    {
+      "time": 292,
+      "word": "2 .0,",
+      "scene_start": false,
+      "energy_rms": 0.6323
+    },
+    {
+      "time": 293,
+      "word": "V4 Pro Max",
+      "scene_start": false,
+      "energy_rms": 0.6726
+    },
+    {
+      "time": 294,
+      "word": "scores 67 .9",
+      "scene_start": false,
+      "energy_rms": 0.4837
+    },
+    {
+      "time": 295,
+      "word": "and",
+      "scene_start": false,
+      "energy_rms": 0.6807
+    },
+    {
+      "time": 296,
+      "word": "Opus 4",
+      "scene_start": false,
+      "energy_rms": 0.6523
+    },
+    {
+      "time": 297,
+      "word": ".7 is 69",
+      "scene_start": false,
+      "energy_rms": 0.6754
+    },
+    {
+      "time": 298,
+      "word": ".4.",
+      "scene_start": false,
+      "energy_rms": 0.5825
+    },
+    {
+      "time": 299,
+      "word": "GPT",
+      "scene_start": false,
+      "energy_rms": 0.5926
+    },
+    {
+      "time": 300,
+      "word": "5 .5",
+      "scene_start": false,
+      "energy_rms": 0.6588
+    },
+    {
+      "time": 301,
+      "word": "jumps ahead on terminal",
+      "scene_start": false,
+      "energy_rms": 0.5921
+    },
+    {
+      "time": 302,
+      "word": "bench at 82",
+      "scene_start": false,
+      "energy_rms": 0.587
+    },
+    {
+      "time": 303,
+      "word": ".7.",
+      "scene_start": false,
+      "energy_rms": 0.6205
+    },
+    {
+      "time": 304,
+      "word": "On MCP",
+      "scene_start": false,
+      "energy_rms": 0.5014
+    },
+    {
+      "time": 305,
+      "word": "Atlas for tool",
+      "scene_start": false,
+      "energy_rms": 0.6287
+    },
+    {
+      "time": 306,
+      "word": "orchestration,",
+      "scene_start": false,
+      "energy_rms": 0.685
+    },
+    {
+      "time": 307,
+      "word": "V4 sits",
+      "scene_start": false,
+      "energy_rms": 0.6472
+    },
+    {
+      "time": 308,
+      "word": "at 73 .6",
+      "scene_start": false,
+      "energy_rms": 0.665
+    },
+    {
+      "time": 309,
+      "word": "%",
+      "scene_start": false,
+      "energy_rms": 0.6211
+    },
+    {
+      "time": 310,
+      "word": "behind GPT",
+      "scene_start": false,
+      "energy_rms": 0.6354
+    },
+    {
+      "time": 311,
+      "word": "5 .5",
+      "scene_start": false,
+      "energy_rms": 0.6616
+    },
+    {
+      "time": 312,
+      "word": "at 75 .3",
+      "scene_start": false,
+      "energy_rms": 0.7925
+    },
+    {
+      "time": 313,
+      "word": "and",
+      "scene_start": false,
+      "energy_rms": 0.498
+    },
+    {
+      "time": 314,
+      "word": "Opus 4 .7",
+      "scene_start": false,
+      "energy_rms": 0.7722
+    },
+    {
+      "time": 315,
+      "word": "at 79 .1.",
+      "scene_start": false,
+      "energy_rms": 0.8204
+    },
+    {
+      "time": 316,
+      "word": "The",
+      "scene_start": false,
+      "energy_rms": 0.5594
+    },
+    {
+      "time": 317,
+      "word": "interesting outlier",
+      "scene_start": false,
+      "energy_rms": 0.7714
+    },
+    {
+      "time": 318,
+      "word": "is browse comp",
+      "scene_start": false,
+      "energy_rms": 0.7497
+    },
+    {
+      "time": 319,
+      "word": "for agentic",
+      "scene_start": false,
+      "energy_rms": 0.3958
+    },
+    {
+      "time": 320,
+      "word": "web browsing.",
+      "scene_start": false,
+      "energy_rms": 0.4831
+    },
+    {
+      "time": 321,
+      "word": "V4 Pro Max scores",
+      "scene_start": false,
+      "energy_rms": 0.6867
+    },
+    {
+      "time": 322,
+      "word": "83 .4",
+      "scene_start": false,
+      "energy_rms": 0.4685
+    },
+    {
+      "time": 323,
+      "word": "% there,",
+      "scene_start": false,
+      "energy_rms": 0.5014
+    },
+    {
+      "time": 324,
+      "word": "beating Opus",
+      "scene_start": false,
+      "energy_rms": 0.5952
+    },
+    {
+      "time": 325,
+      "word": "4 .7 at",
+      "scene_start": false,
+      "energy_rms": 0.4417
+    },
+    {
+      "time": 326,
+      "word": "79 .3",
+      "scene_start": false,
+      "energy_rms": 0.4772
+    },
+    {
+      "time": 327,
+      "word": "and almost",
+      "scene_start": false,
+      "energy_rms": 0.7317
+    },
+    {
+      "time": 328,
+      "word": "matching GPT",
+      "scene_start": false,
+      "energy_rms": 0.5465
+    },
+    {
+      "time": 329,
+      "word": "5 .5 at",
+      "scene_start": false,
+      "energy_rms": 0.5312
+    },
+    {
+      "time": 330,
+      "word": "84 .4.",
+      "scene_start": false,
+      "energy_rms": 0.6019
+    },
+    {
+      "time": 331,
+      "word": "So",
+      "scene_start": false,
+      "energy_rms": 0.4448
+    },
+    {
+      "time": 332,
+      "word": "agentic browsing is",
+      "scene_start": false,
+      "energy_rms": 0.8226
+    },
+    {
+      "time": 333,
+      "word": "where this model really",
+      "scene_start": false,
+      "energy_rms": 0.6343
+    },
+    {
+      "time": 334,
+      "word": "pushes.",
+      "scene_start": false,
+      "energy_rms": 0.6892
+    },
+    {
+      "time": 335,
+      "word": "On knowledge, it lags",
+      "scene_start": false,
+      "energy_rms": 0.6965
+    },
+    {
+      "time": 336,
+      "word": "a bit.",
+      "scene_start": false,
+      "energy_rms": 0.5377
+    },
+    {
+      "time": 337,
+      "word": "Gemini 3 .1",
+      "scene_start": false,
+      "energy_rms": 0.7117
+    },
+    {
+      "time": 338,
+      "word": "Pro still",
+      "scene_start": false,
+      "energy_rms": 0.6433
+    },
+    {
+      "time": 339,
+      "word": "leads on MMLU",
+      "scene_start": false,
+      "energy_rms": 0.7477
+    },
+    {
+      "time": 340,
+      "word": "Pro,",
+      "scene_start": false,
+      "energy_rms": 0.8302
+    },
+    {
+      "time": 341,
+      "word": "simple QA and",
+      "scene_start": false,
+      "energy_rms": 0.7117
+    },
+    {
+      "time": 342,
+      "word": "HLE.",
+      "scene_start": false,
+      "energy_rms": 0.7469
+    },
+    {
+      "time": 343,
+      "word": "Deepseek",
+      "scene_start": false,
+      "energy_rms": 0.6166
+    },
+    {
+      "time": 344,
+      "word": "themselves right in",
+      "scene_start": false,
+      "energy_rms": 0.8384
+    },
+    {
+      "time": 345,
+      "word": "the technical report",
+      "scene_start": false,
+      "energy_rms": 0.5262
+    },
+    {
+      "time": 346,
+      "word": "that the open source",
+      "scene_start": false,
+      "energy_rms": 0.7126
+    },
+    {
+      "time": 347,
+      "word": "frontier is",
+      "scene_start": false,
+      "energy_rms": 0.6461
+    },
+    {
+      "time": 348,
+      "word": "trailing the closed source",
+      "scene_start": false,
+      "energy_rms": 0.759
+    },
+    {
+      "time": 349,
+      "word": "1 by roughly",
+      "scene_start": false,
+      "energy_rms": 0.7241
+    },
+    {
+      "time": 350,
+      "word": "3 -6 months.",
+      "scene_start": false,
+      "energy_rms": 0.5859
+    },
+    {
+      "time": 351,
+      "word": "That is unusually",
+      "scene_start": false,
+      "energy_rms": 0.4986
+    },
+    {
+      "time": 352,
+      "word": "honest framing",
+      "scene_start": false,
+      "energy_rms": 0.6205
+    },
+    {
+      "time": 353,
+      "word": "for a launch,",
+      "scene_start": false,
+      "energy_rms": 0.5701
+    },
+    {
+      "time": 354,
+      "word": "and I think it is closer",
+      "scene_start": false,
+      "energy_rms": 0.7511
+    },
+    {
+      "time": 355,
+      "word": "to the truth than most",
+      "scene_start": false,
+      "energy_rms": 0.6959
+    },
+    {
+      "time": 356,
+      "word": "marketing claims I",
+      "scene_start": false,
+      "energy_rms": 0.737
+    },
+    {
+      "time": 357,
+      "word": "have seen this year.",
+      "scene_start": false,
+      "energy_rms": 0.5141
+    },
+    {
+      "time": 358,
+      "word": "The hardware story",
+      "scene_start": false,
+      "energy_rms": 0.6422
+    },
+    {
+      "time": 359,
+      "word": "is also",
+      "scene_start": false,
+      "energy_rms": 0.6695
+    },
+    {
+      "time": 360,
+      "word": "worth a beat.",
+      "scene_start": false,
+      "energy_rms": 0.359
+    },
+    {
+      "time": 361,
+      "word": "They mention validating",
+      "scene_start": false,
+      "energy_rms": 0.8136
+    },
+    {
+      "time": 362,
+      "word": "the model on both",
+      "scene_start": false,
+      "energy_rms": 0.6712
+    },
+    {
+      "time": 363,
+      "word": "Nvidia GPUs",
+      "scene_start": false,
+      "energy_rms": 0.6475
+    },
+    {
+      "time": 364,
+      "word": "and Huawei Ascent",
+      "scene_start": false,
+      "energy_rms": 0.8204
+    },
+    {
+      "time": 365,
+      "word": "NPUs,",
+      "scene_start": false,
+      "energy_rms": 0.469
+    },
+    {
+      "time": 366,
+      "word": "but they do not say",
+      "scene_start": false,
+      "energy_rms": 0.7083
+    },
+    {
+      "time": 367,
+      "word": "a word about which",
+      "scene_start": false,
+      "energy_rms": 0.7984
+    },
+    {
+      "time": 368,
+      "word": "chips were actually used",
+      "scene_start": false,
+      "energy_rms": 0.5265
+    },
+    {
+      "time": 369,
+      "word": "for training.",
+      "scene_start": false,
+      "energy_rms": 0.5915
+    },
+    {
+      "time": 370,
+      "word": "That is a change",
+      "scene_start": false,
+      "energy_rms": 0.5867
+    },
+    {
+      "time": 371,
+      "word": "from V3 where",
+      "scene_start": false,
+      "energy_rms": 0.4828
+    },
+    {
+      "time": 372,
+      "word": "the training stack was",
+      "scene_start": false,
+      "energy_rms": 0.4609
+    },
+    {
+      "time": 373,
+      "word": "documented in detail.",
+      "scene_start": false,
+      "energy_rms": 0.5186
+    },
+    {
+      "time": 374,
+      "word": "The model",
+      "scene_start": false,
+      "energy_rms": 0.3049
+    },
+    {
+      "time": 375,
+      "word": "uses FP4",
+      "scene_start": false,
+      "energy_rms": 0.6374
+    },
+    {
+      "time": 376,
+      "word": "plus FP8",
+      "scene_start": false,
+      "energy_rms": 0.5006
+    },
+    {
+      "time": 377,
+      "word": "mixed precision,",
+      "scene_start": false,
+      "energy_rms": 0.5811
+    },
+    {
+      "time": 378,
+      "word": "with MOE",
+      "scene_start": false,
+      "energy_rms": 0.6047
+    },
+    {
+      "time": 379,
+      "word": "expert weights",
+      "scene_start": false,
+      "energy_rms": 0.7382
+    },
+    {
+      "time": 380,
+      "word": "running in FP4",
+      "scene_start": false,
+      "energy_rms": 0.7128
+    },
+    {
+      "time": 381,
+      "word": "and",
+      "scene_start": false,
+      "energy_rms": 0.5715
+    },
+    {
+      "time": 382,
+      "word": "most other parameters",
+      "scene_start": false,
+      "energy_rms": 0.7905
+    },
+    {
+      "time": 383,
+      "word": "in FP8.",
+      "scene_start": false,
+      "energy_rms": 0.5481
+    },
+    {
+      "time": 384,
+      "word": "FP4",
+      "scene_start": false,
+      "energy_rms": 0.451
+    },
+    {
+      "time": 385,
+      "word": "cuts memory roughly",
+      "scene_start": false,
+      "energy_rms": 0.7247
+    },
+    {
+      "time": 386,
+      "word": "in half compared",
+      "scene_start": false,
+      "energy_rms": 0.672
+    },
+    {
+      "time": 387,
+      "word": "to FP8,",
+      "scene_start": false,
+      "energy_rms": 0.6084
+    },
+    {
+      "time": 388,
+      "word": "so deployment",
+      "scene_start": false,
+      "energy_rms": 0.5926
+    },
+    {
+      "time": 389,
+      "word": "becomes much more",
+      "scene_start": false,
+      "energy_rms": 0.607
+    },
+    {
+      "time": 390,
+      "word": "feasible. People",
+      "scene_start": false,
+      "energy_rms": 0.4369
+    },
+    {
+      "time": 391,
+      "word": "will assume blackwell,",
+      "scene_start": false,
+      "energy_rms": 0.7103
+    },
+    {
+      "time": 392,
+      "word": "but hopper",
+      "scene_start": false,
+      "energy_rms": 0.5293
+    },
+    {
+      "time": 393,
+      "word": "can do FP4",
+      "scene_start": false,
+      "energy_rms": 0.502
+    },
+    {
+      "time": 394,
+      "word": "in a weights only mode",
+      "scene_start": false,
+      "energy_rms": 0.6197
+    },
+    {
+      "time": 395,
+      "word": "2, so",
+      "scene_start": false,
+      "energy_rms": 0.522
+    },
+    {
+      "time": 396,
+      "word": "we cannot really tell",
+      "scene_start": false,
+      "energy_rms": 0.7494
+    },
+    {
+      "time": 397,
+      "word": "from outside. For",
+      "scene_start": false,
+      "energy_rms": 0.5259
+    },
+    {
+      "time": 398,
+      "word": "local deployment,",
+      "scene_start": false,
+      "energy_rms": 0.6073
+    },
+    {
+      "time": 399,
+      "word": "V4 Pro",
+      "scene_start": false,
+      "energy_rms": 0.5262
+    },
+    {
+      "time": 400,
+      "word": "is basically",
+      "scene_start": false,
+      "energy_rms": 0.7086
+    },
+    {
+      "time": 401,
+      "word": "out of reach for any",
+      "scene_start": false,
+      "energy_rms": 0.6678
+    },
+    {
+      "time": 402,
+      "word": "normal setup.",
+      "scene_start": false,
+      "energy_rms": 0.5408
+    },
+    {
+      "time": 403,
+      "word": "You are looking",
+      "scene_start": false,
+      "energy_rms": 0.703
+    },
+    {
+      "time": 404,
+      "word": "at an H200,",
+      "scene_start": false,
+      "energy_rms": 0.4082
+    },
+    {
+      "time": 405,
+      "word": "dual A180",
+      "scene_start": false,
+      "energy_rms": 0.5718
+    },
+    {
+      "time": 406,
+      "word": "gigip",
+      "scene_start": false,
+      "energy_rms": 0.5538
+    },
+    {
+      "time": 407,
+      "word": "or a quantized",
+      "scene_start": false,
+      "energy_rms": 0.627
+    },
+    {
+      "time": 408,
+      "word": "rig with",
+      "scene_start": false,
+      "energy_rms": 0.4778
+    },
+    {
+      "time": 409,
+      "word": "multiple 4090s.",
+      "scene_start": false,
+      "energy_rms": 0.6667
+    },
+    {
+      "time": 410,
+      "word": "V4",
+      "scene_start": false,
+      "energy_rms": 0.3547
+    },
+    {
+      "time": 411,
+      "word": "Flash is a bit",
+      "scene_start": false,
+      "energy_rms": 0.6154
+    },
+    {
+      "time": 412,
+      "word": "more practical,",
+      "scene_start": false,
+      "energy_rms": 0.4856
+    },
+    {
+      "time": 413,
+      "word": "and there is already an",
+      "scene_start": false,
+      "energy_rms": 0.7672
+    },
+    {
+      "time": 414,
+      "word": "8 -bit MLX",
+      "scene_start": false,
+      "energy_rms": 0.518
+    },
+    {
+      "time": 415,
+      "word": "build on hugging face",
+      "scene_start": false,
+      "energy_rms": 0.5678
+    },
+    {
+      "time": 416,
+      "word": "sitting around 302",
+      "scene_start": false,
+      "energy_rms": 0.6312
+    },
+    {
+      "time": 417,
+      "word": "gigip.",
+      "scene_start": false,
+      "energy_rms": 0.6337
+    },
+    {
+      "time": 418,
+      "word": "So a 128",
+      "scene_start": false,
+      "energy_rms": 0.5878
+    },
+    {
+      "time": 419,
+      "word": "gigip",
+      "scene_start": false,
+      "energy_rms": 0.5191
+    },
+    {
+      "time": 420,
+      "word": "Apple Silicon",
+      "scene_start": false,
+      "energy_rms": 0.5563
+    },
+    {
+      "time": 421,
+      "word": "Mac studio with",
+      "scene_start": false,
+      "energy_rms": 0.5039
+    },
+    {
+      "time": 422,
+      "word": "quantization is",
+      "scene_start": false,
+      "energy_rms": 0.5436
+    },
+    {
+      "time": 423,
+      "word": "the closest thing to",
+      "scene_start": false,
+      "energy_rms": 0.4918
+    },
+    {
+      "time": 424,
+      "word": "a home setup that",
+      "scene_start": false,
+      "energy_rms": 0.4361
+    },
+    {
+      "time": 425,
+      "word": "can host this. Three",
+      "scene_start": false,
+      "energy_rms": 0.5977
+    },
+    {
+      "time": 426,
+      "word": "reasoning",
+      "scene_start": false,
+      "energy_rms": 0.6807
+    },
+    {
+      "time": 427,
+      "word": "modes ship in the",
+      "scene_start": false,
+      "energy_rms": 0.766
+    },
+    {
+      "time": 428,
+      "word": "API,",
+      "scene_start": false,
+      "energy_rms": 0.5343
+    },
+    {
+      "time": 429,
+      "word": "non -think for fast",
+      "scene_start": false,
+      "energy_rms": 0.6357
+    },
+    {
+      "time": 430,
+      "word": "answers, think",
+      "scene_start": false,
+      "energy_rms": 0.4175
+    },
+    {
+      "time": 431,
+      "word": "high for normal reasoning,",
+      "scene_start": false,
+      "energy_rms": 0.6602
+    },
+    {
+      "time": 432,
+      "word": "and think",
+      "scene_start": false,
+      "energy_rms": 0.4693
+    },
+    {
+      "time": 433,
+      "word": "max for the heavy",
+      "scene_start": false,
+      "energy_rms": 0.6495
+    },
+    {
+      "time": 434,
+      "word": "stuff. For think",
+      "scene_start": false,
+      "energy_rms": 0.4631
+    },
+    {
+      "time": 435,
+      "word": "max, they recommend running",
+      "scene_start": false,
+      "energy_rms": 0.7351
+    },
+    {
+      "time": 436,
+      "word": "with at least a",
+      "scene_start": false,
+      "energy_rms": 0.6036
+    },
+    {
+      "time": 437,
+      "word": "384K",
+      "scene_start": false,
+      "energy_rms": 0.5186
+    },
+    {
+      "time": 438,
+      "word": "context",
+      "scene_start": false,
+      "energy_rms": 0.5639
+    },
+    {
+      "time": 439,
+      "word": "window, because",
+      "scene_start": false,
+      "energy_rms": 0.529
+    },
+    {
+      "time": 440,
+      "word": "the chains of thought are",
+      "scene_start": false,
+      "energy_rms": 0.7216
+    },
+    {
+      "time": 441,
+      "word": "long. In my",
+      "scene_start": false,
+      "energy_rms": 0.5524
+    },
+    {
+      "time": 442,
+      "word": "own light testing on",
+      "scene_start": false,
+      "energy_rms": 0.7213
+    },
+    {
+      "time": 443,
+      "word": "the chat interface,",
+      "scene_start": false,
+      "energy_rms": 0.5853
+    },
+    {
+      "time": 444,
+      "word": "the model is fast",
+      "scene_start": false,
+      "energy_rms": 0.6244
+    },
+    {
+      "time": 445,
+      "word": "on output,",
+      "scene_start": false,
+      "energy_rms": 0.6315
+    },
+    {
+      "time": 446,
+      "word": "but it spends a",
+      "scene_start": false,
+      "energy_rms": 0.5769
+    },
+    {
+      "time": 447,
+      "word": "lot of tokens thinking,",
+      "scene_start": false,
+      "energy_rms": 0.6796
+    },
+    {
+      "time": 448,
+      "word": "which is",
+      "scene_start": false,
+      "energy_rms": 0.4766
+    },
+    {
+      "time": 449,
+      "word": "going to drive up your output",
+      "scene_start": false,
+      "energy_rms": 0.6709
+    },
+    {
+      "time": 450,
+      "word": "bill on real",
+      "scene_start": false,
+      "energy_rms": 0.6278
+    },
+    {
+      "time": 451,
+      "word": "workloads even",
+      "scene_start": false,
+      "energy_rms": 0.7936
+    },
+    {
+      "time": 452,
+      "word": "with the cheap rates.",
+      "scene_start": false,
+      "energy_rms": 0.7148
+    },
+    {
+      "time": 453,
+      "word": "So benchmark",
+      "scene_start": false,
+      "energy_rms": 0.6712
+    },
+    {
+      "time": 454,
+      "word": "on your own tasks",
+      "scene_start": false,
+      "energy_rms": 0.5329
+    },
+    {
+      "time": 455,
+      "word": "before you switch",
+      "scene_start": false,
+      "energy_rms": 0.5194
+    },
+    {
+      "time": 456,
+      "word": "defaults.",
+      "scene_start": false,
+      "energy_rms": 0.3125
+    },
+    {
+      "time": 457,
+      "word": "The community reaction",
+      "scene_start": true,
+      "energy_rms": 0.7131
+    },
+    {
+      "time": 458,
+      "word": "has been pretty strong.",
+      "scene_start": false,
+      "energy_rms": 0.5211
+    },
+    {
+      "time": 459,
+      "word": "Hugging face",
+      "scene_start": false,
+      "energy_rms": 0.6146
+    },
+    {
+      "time": 460,
+      "word": "welcomed the whale back.",
+      "scene_start": true,
+      "energy_rms": 0.6653
+    },
+    {
+      "time": 461,
+      "word": "Val's",
+      "scene_start": false,
+      "energy_rms": 0.4172
+    },
+    {
+      "time": 462,
+      "word": "AI listed V4",
+      "scene_start": false,
+      "energy_rms": 0.4783
+    },
+    {
+      "time": 463,
+      "word": "as the number 1",
+      "scene_start": false,
+      "energy_rms": 0.7328
+    },
+    {
+      "time": 464,
+      "word": "open weight model",
+      "scene_start": false,
+      "energy_rms": 0.7531
+    },
+    {
+      "time": 465,
+      "word": "on their vibe code",
+      "scene_start": false,
+      "energy_rms": 0.7376
+    },
+    {
+      "time": 466,
+      "word": "benchmark.",
+      "scene_start": false,
+      "energy_rms": 0.3378
+    },
+    {
+      "time": 467,
+      "word": "Arena AI's",
+      "scene_start": false,
+      "energy_rms": 0.6641
+    },
+    {
+      "time": 468,
+      "word": "live code leaderboard",
+      "scene_start": false,
+      "energy_rms": 0.5898
+    },
+    {
+      "time": 469,
+      "word": "placed V4",
+      "scene_start": false,
+      "energy_rms": 0.6861
+    },
+    {
+      "time": 470,
+      "word": "Pro thinking at number",
+      "scene_start": false,
+      "energy_rms": 0.632
+    },
+    {
+      "time": 471,
+      "word": "3 across all",
+      "scene_start": false,
+      "energy_rms": 0.5847
+    },
+    {
+      "time": 472,
+      "word": "open models",
+      "scene_start": false,
+      "energy_rms": 0.616
+    },
+    {
+      "time": 473,
+      "word": "with an 88",
+      "scene_start": false,
+      "energy_rms": 0.6154
+    },
+    {
+      "time": 474,
+      "word": "-illow jump",
+      "scene_start": false,
+      "energy_rms": 0.7117
+    },
+    {
+      "time": 475,
+      "word": "over V3 .2.",
+      "scene_start": true,
+      "energy_rms": 0.6855
+    },
+    {
+      "time": 476,
+      "word": "That is",
+      "scene_start": false,
+      "energy_rms": 0.5619
+    },
+    {
+      "time": 477,
+      "word": "a real generational",
+      "scene_start": false,
+      "energy_rms": 0.7537
+    },
+    {
+      "time": 478,
+      "word": "step, not",
+      "scene_start": false,
+      "energy_rms": 0.5175
+    },
+    {
+      "time": 479,
+      "word": "a half update.",
+      "scene_start": false,
+      "energy_rms": 0.6579
+    },
+    {
+      "time": 480,
+      "word": "Integration",
+      "scene_start": false,
+      "energy_rms": 0.3975
+    },
+    {
+      "time": 481,
+      "word": "support is already",
+      "scene_start": true,
+      "energy_rms": 0.6813
+    },
+    {
+      "time": 482,
+      "word": "there for Cloud",
+      "scene_start": false,
+      "energy_rms": 0.768
+    },
+    {
+      "time": 483,
+      "word": "Code, OpenClaw",
+      "scene_start": false,
+      "energy_rms": 0.6881
+    },
+    {
+      "time": 484,
+      "word": "and OpenCode,",
+      "scene_start": false,
+      "energy_rms": 0.6106
+    },
+    {
+      "time": 485,
+      "word": "and you can route through",
+      "scene_start": false,
+      "energy_rms": 0.6486
+    },
+    {
+      "time": 486,
+      "word": "OpenRouter if",
+      "scene_start": false,
+      "energy_rms": 0.6084
+    },
+    {
+      "time": 487,
+      "word": "you do not want to",
+      "scene_start": false,
+      "energy_rms": 0.6425
+    },
+    {
+      "time": 488,
+      "word": "send traffic to a Chinese",
+      "scene_start": false,
+      "energy_rms": 0.5918
+    },
+    {
+      "time": 489,
+      "word": "hosted endpoint",
+      "scene_start": false,
+      "energy_rms": 0.7447
+    },
+    {
+      "time": 490,
+      "word": "for compliance",
+      "scene_start": false,
+      "energy_rms": 0.5107
+    },
+    {
+      "time": 491,
+      "word": "reasons.",
+      "scene_start": false,
+      "energy_rms": 0.3564
+    },
+    {
+      "time": 492,
+      "word": "The one thing this released",
+      "scene_start": false,
+      "energy_rms": 0.7708
+    },
+    {
+      "time": 493,
+      "word": "does not do is",
+      "scene_start": false,
+      "energy_rms": 0.6075
+    },
+    {
+      "time": 494,
+      "word": "dethrone",
+      "scene_start": true,
+      "energy_rms": 0.7244
+    },
+    {
+      "time": 495,
+      "word": "GPT 5 .5",
+      "scene_start": false,
+      "energy_rms": 0.5493
+    },
+    {
+      "time": 496,
+      "word": "or Clawed",
+      "scene_start": false,
+      "energy_rms": 0.4524
+    },
+    {
+      "time": 497,
+      "word": "Opus 4 .7",
+      "scene_start": false,
+      "energy_rms": 0.5225
+    },
+    {
+      "time": 498,
+      "word": "across the",
+      "scene_start": false,
+      "energy_rms": 0.5549
+    },
+    {
+      "time": 499,
+      "word": "board. It",
+      "scene_start": false,
+      "energy_rms": 0.1467
+    },
+    {
+      "time": 500,
+      "word": "does not need to.",
+      "scene_start": false,
+      "energy_rms": 0.8744
+    },
+    {
+      "time": 501,
+      "word": "If you can get",
+      "scene_start": false,
+      "energy_rms": 0.6202
+    },
+    {
+      "time": 502,
+      "word": "80 -90 %",
+      "scene_start": false,
+      "energy_rms": 0.7294
+    },
+    {
+      "time": 503,
+      "word": "of frontier",
+      "scene_start": false,
+      "energy_rms": 0.4558
+    },
+    {
+      "time": 504,
+      "word": "performance on coding",
+      "scene_start": false,
+      "energy_rms": 0.4834
+    },
+    {
+      "time": 505,
+      "word": "and agentic",
+      "scene_start": false,
+      "energy_rms": 0.6793
+    },
+    {
+      "time": 506,
+      "word": "tasks for",
+      "scene_start": false,
+      "energy_rms": 0.2919
+    },
+    {
+      "time": 507,
+      "word": "1 -6th or",
+      "scene_start": false,
+      "energy_rms": 0.7345
+    },
+    {
+      "time": 508,
+      "word": "1 -7th the price,",
+      "scene_start": false,
+      "energy_rms": 0.6667
+    },
+    {
+      "time": 509,
+      "word": "with weights",
+      "scene_start": false,
+      "energy_rms": 1.0
+    },
+    {
+      "time": 510,
+      "word": "you can self -host,",
+      "scene_start": false,
+      "energy_rms": 0.6194
+    },
+    {
+      "time": 511,
+      "word": "that is a different",
+      "scene_start": false,
+      "energy_rms": 0.6171
+    },
+    {
+      "time": 512,
+      "word": "conversation than",
+      "scene_start": false,
+      "energy_rms": 0.4319
+    },
+    {
+      "time": 513,
+      "word": "whether your provider",
+      "scene_start": false,
+      "energy_rms": 0.6551
+    },
+    {
+      "time": 514,
+      "word": "is on a closed",
+      "scene_start": false,
+      "energy_rms": 0.703
+    },
+    {
+      "time": 515,
+      "word": "model leaderboard.",
+      "scene_start": false,
+      "energy_rms": 0.5515
+    },
+    {
+      "time": 516,
+      "word": "That is the",
+      "scene_start": false,
+      "energy_rms": 0.4462
+    },
+    {
+      "time": 517,
+      "word": "real story here.",
+      "scene_start": false,
+      "energy_rms": 0.511
+    },
+    {
+      "time": 518,
+      "word": "The economics",
+      "scene_start": false,
+      "energy_rms": 0.6075
+    },
+    {
+      "time": 519,
+      "word": "of Frontier class",
+      "scene_start": false,
+      "energy_rms": 0.6239
+    },
+    {
+      "time": 520,
+      "word": "AI just got",
+      "scene_start": false,
+      "energy_rms": 0.6836
+    },
+    {
+      "time": 521,
+      "word": "compressed into a",
+      "scene_start": false,
+      "energy_rms": 0.6351
+    },
+    {
+      "time": 522,
+      "word": "much lower price",
+      "scene_start": false,
+      "energy_rms": 0.7421
+    },
+    {
+      "time": 523,
+      "word": "band. An any",
+      "scene_start": false,
+      "energy_rms": 0.4642
+    },
+    {
+      "time": 524,
+      "word": "team running heavy agent",
+      "scene_start": false,
+      "energy_rms": 0.7314
+    },
+    {
+      "time": 525,
+      "word": "loops, code",
+      "scene_start": false,
+      "energy_rms": 0.6605
+    },
+    {
+      "time": 526,
+      "word": "-based analysis or",
+      "scene_start": false,
+      "energy_rms": 0.6402
+    },
+    {
+      "time": 527,
+      "word": "long context",
+      "scene_start": false,
+      "energy_rms": 0.741
+    },
+    {
+      "time": 528,
+      "word": "rag should at",
+      "scene_start": false,
+      "energy_rms": 0.5999
+    },
+    {
+      "time": 529,
+      "word": "least put V4 Flash",
+      "scene_start": false,
+      "energy_rms": 0.5822
+    },
+    {
+      "time": 530,
+      "word": "or V4",
+      "scene_start": false,
+      "energy_rms": 0.5034
+    },
+    {
+      "time": 531,
+      "word": "Pro into their",
+      "scene_start": false,
+      "energy_rms": 0.7075
+    },
+    {
+      "time": 532,
+      "word": "evaluation harness",
+      "scene_start": false,
+      "energy_rms": 0.7207
+    },
+    {
+      "time": 533,
+      "word": "this week. Alright,",
+      "scene_start": true,
+      "energy_rms": 0.4516
+    },
+    {
+      "time": 534,
+      "word": "so that's",
+      "scene_start": false,
+      "energy_rms": 0.4676
+    },
+    {
+      "time": 535,
+      "word": "it from the video and",
+      "scene_start": false,
+      "energy_rms": 0.6219
+    },
+    {
+      "time": 536,
+      "word": "I hope you enjoyed",
+      "scene_start": false,
+      "energy_rms": 0.4716
+    },
+    {
+      "time": 537,
+      "word": "it. If you did please like",
+      "scene_start": false,
+      "energy_rms": 0.5952
+    },
+    {
+      "time": 538,
+      "word": "this video",
+      "scene_start": false,
+      "energy_rms": 0.8744
+    },
+    {
+      "time": 539,
+      "word": "and subscribe to",
+      "scene_start": false,
+      "energy_rms": 0.6639
+    },
+    {
+      "time": 540,
+      "word": "the channel and I'll",
+      "scene_start": false,
+      "energy_rms": 0.6073
+    },
+    {
+      "time": 541,
+      "word": "see you in the next video.",
+      "scene_start": false,
+      "energy_rms": 0.6943
+    }
+  ],
+  "top_windows": [
+    {
+      "start_sec": 457,
+      "end_sec": 487,
+      "score": 0.7887,
+      "avg_energy": 0.6217,
+      "word_density": 2.7,
+      "scene_changes": 4
+    },
+    {
+      "start_sec": 188,
+      "end_sec": 218,
+      "score": 0.7271,
+      "avg_energy": 0.6177,
+      "word_density": 2.57,
+      "scene_changes": 3
+    },
+    {
+      "start_sec": 88,
+      "end_sec": 118,
+      "score": 0.6766,
+      "avg_energy": 0.6415,
+      "word_density": 3.1,
+      "scene_changes": 2
+    },
+    {
+      "start_sec": 225,
+      "end_sec": 255,
+      "score": 0.6759,
+      "avg_energy": 0.6399,
+      "word_density": 2.63,
+      "scene_changes": 2
+    },
+    {
+      "start_sec": 27,
+      "end_sec": 57,
+      "score": 0.6756,
+      "avg_energy": 0.6391,
+      "word_density": 3.13,
+      "scene_changes": 2
+    },
+    {
+      "start_sec": 509,
+      "end_sec": 539,
+      "score": 0.6088,
+      "avg_energy": 0.622,
+      "word_density": 3.03,
+      "scene_changes": 1
+    },
+    {
+      "start_sec": 265,
+      "end_sec": 295,
+      "score": 0.5693,
+      "avg_energy": 0.5832,
+      "word_density": 2.3,
+      "scene_changes": 1
+    },
+    {
+      "start_sec": 338,
+      "end_sec": 368,
+      "score": 0.5677,
+      "avg_energy": 0.6692,
+      "word_density": 2.97,
+      "scene_changes": 0
+    },
+    {
+      "start_sec": 151,
+      "end_sec": 181,
+      "score": 0.5533,
+      "avg_energy": 0.6332,
+      "word_density": 2.73,
+      "scene_changes": 0
+    },
+    {
+      "start_sec": 425,
+      "end_sec": 455,
+      "score": 0.5454,
+      "avg_energy": 0.6135,
+      "word_density": 3.1,
+      "scene_changes": 0
+    }
+  ],
+  "clips": [
+    "clips\\technology\\clip_001.mp4",
+    "clips\\technology\\clip_002.mp4",
+    "clips\\technology\\clip_003.mp4"
+  ]
+}

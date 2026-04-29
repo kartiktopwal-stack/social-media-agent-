@@ -158,6 +158,7 @@ class VideoAssembler:
             # Load and prepare video clips
             video_clips = []
             total_duration = 0.0
+            used_background_fallback = False
 
             for clip in clips:
                 if not clip.local_path.exists():
@@ -182,6 +183,7 @@ class VideoAssembler:
 
             if not video_clips:
                 # Create a solid color background if no clips available
+                used_background_fallback = True
                 logger.warning("no_clips_available_using_background")
                 bg = ColorClip(
                     size=(TARGET_WIDTH, TARGET_HEIGHT),
@@ -201,6 +203,15 @@ class VideoAssembler:
 
             # Set audio
             final = concat.set_audio(audio)
+
+            footage_mode = (
+                "solid_background_fallback" if used_background_fallback else "real_pexels_footage"
+            )
+            logger.info(
+                "video_footage_mode",
+                mode=footage_mode,
+                assembled_clip_layers=len(video_clips),
+            )
 
             # Write output
             final.write_videofile(

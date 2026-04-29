@@ -119,6 +119,7 @@ bash scripts/run.sh full
 ```
 ai-content-empire/
 ├── main.py                        CLI entry-point
+├── run_pipeline.py                Run full daily pipeline (same as `main.py run`)
 ├── requirements.txt               All Python dependencies
 ├── pyproject.toml                 Pytest config
 ├── .env.template                  Copy to .env and fill in keys
@@ -138,7 +139,7 @@ ai-content-empire/
 │   │   └── publisher.py           YouTube/Instagram/TikTok/Twitter APIs
 │   ├── orchestrator/
 │   │   ├── pipeline.py            Master pipeline + daily runner
-│   │   └── celery_app.py          Celery tasks + beat schedule
+│   │   └── scheduler.py           Optional APScheduler (main.py scheduler)
 │   ├── dashboard/
 │   │   └── app.py                 FastAPI monitoring dashboard
 │   └── utils/
@@ -147,7 +148,7 @@ ai-content-empire/
 │
 ├── docker/
 │   ├── Dockerfile                 Isolated container build
-│   └── docker-compose.yml         Full stack (app + Redis + DB + workers)
+│   └── docker-compose.yml         Optional dashboard container only
 │
 ├── scripts/
 │   ├── setup.sh                   First-time setup
@@ -211,15 +212,15 @@ bash scripts/run.sh test-integration
 
 ## Dashboard
 
-After starting the stack, open:
-- **Dashboard**: http://localhost:8000
-- **Celery Monitor**: http://localhost:5555
+After starting the Docker stack (`bash scripts/run.sh stack`), open **http://localhost:8000** for the FastAPI monitoring dashboard.
 
 ```bash
-bash scripts/run.sh stack     # Start everything
-bash scripts/run.sh stop      # Stop everything
+bash scripts/run.sh stack     # Build and start the dashboard container
+bash scripts/run.sh stop      # Stop containers
 bash scripts/run.sh logs app  # View app logs
 ```
+
+For the full content pipeline (trends → publish), run on the host: `python run_pipeline.py` or `python main.py run`.
 
 ---
 

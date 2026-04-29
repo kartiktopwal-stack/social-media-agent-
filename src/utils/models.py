@@ -7,6 +7,7 @@ Shared Pydantic data models used across all agents.
 from __future__ import annotations
 
 import enum
+from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
@@ -18,9 +19,6 @@ from pydantic import BaseModel, Field
 
 class Platform(str, enum.Enum):
     YOUTUBE = "youtube"
-    INSTAGRAM = "instagram"
-    TIKTOK = "tiktok"
-    TWITTER = "twitter"
 
 
 class JobStatus(str, enum.Enum):
@@ -58,6 +56,13 @@ class NicheConfig(BaseModel):
     script_style: str = "dramatic_reveal"
     posting_times: dict[str, int] = Field(default_factory=lambda: {"youtube": 14})
     platforms: dict[str, dict[str, str]] = Field(default_factory=dict)
+
+
+@dataclass(slots=True)
+class KeywordRotationState:
+    niche_name: str
+    current_index: int = 0
+    last_updated: Optional[datetime] = None
 
 
 # ─── Trend Models ─────────────────────────────────────────────────────────────

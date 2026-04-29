@@ -1,0 +1,60 @@
+
+============================================================
+  TRENDS-ONLY TEST  ù  niche: Tech & AI
+============================================================
+  keywords  : ['artificial intelligence', 'machine learning', 'startups', 'gadgets', 'cybersecurity', 'programming']
+  subreddits: ['technology', 'artificial', 'MachineLearning', 'programming']
+  news_cat  : technology
+  yt_cat_id : 28
+============================================================
+
+>>> Running: google_trends ...
+2026-04-05T06:41:14.651334Z [info     ] collecting_google_trends       [trend_engine] niche=technology
+2026-04-05T06:41:14.826947Z [info     ] google_trends_collected        [trend_engine] count=100
+    1. [google_trends] apple news today  (pop=10.0)
+    2. [google_trends] openai news today  (pop=10.0)
+    3. [google_trends] artificial intelligence wikipedia  (pop=3.0)
+    ... and 97 more
+
+>>> Running: reddit ...
+2026-04-05T06:41:14.828127Z [info     ] collecting_reddit_trends       [trend_engine] niche=technology
+2026-04-05T06:41:14.828127Z [warning  ] reddit_not_configured          [trend_engine]
+
+>>> Running: newsapi ...
+2026-04-05T06:41:14.829140Z [info     ] collecting_newsapi_trends      [trend_engine] niche=technology
+2026-04-05T06:41:15.199930Z [info     ] newsapi_trends_collected       [trend_engine] count=10
+    1. [newsapi] Anthropic essentially bans OpenClaw from Claude by making subscribers pay extra   (pop=6.0)
+    2. [newsapi] Karpathy shares 'LLM Knowledge Base' architecture that bypasses RAG with an evol  (pop=6.0)
+    3. [newsapi] This RollerCoaster Tycoon 2 Rollercoaster Is So Unfathomably Long That It Looks   (pop=6.0)
+    ... and 7 more
+
+>>> Running: hackernews ...
+2026-04-05T06:41:15.200451Z [info     ] collecting_hackernews_trends   [trend_engine] niche=technology
+2026-04-05T06:41:20.420223Z [info     ] hackernews_trends_collected    [trend_engine] count=15
+    1. [hackernews] Introduction to Computer Music (2009) [pdf]  (pop=1.2)
+    2. [hackernews] Show HN: A game where you build a GPU  (pop=6.3)
+    3. [hackernews] OpenScreen is an open-source alternative to Screen Studio  (pop=2.0)
+    ... and 12 more
+
+>>> Running: youtube ...
+2026-04-05T06:41:20.420722Z [info     ] collecting_youtube_trends      [trend_engine] niche=technology
+2026-04-05T06:41:20.571421Z [info     ] youtube_trends_collected       [trend_engine] count=10
+    1. [youtube] A Gamer Saving a PlayStation...?  (pop=10.0)
+    2. [youtube] jpedro He has the worst laptop setup.. 100k likes and we?ll get him an upgrade #  (pop=10.0)
+    3. [youtube] Google and Apple stuck in boxes  (pop=10.0)
+    ... and 7 more
+
+============================================================
+  SUMMARY: RawTrend counts per collector
+============================================================
+  Collector               Count  Status    
+  -------------------- --------  ----------
+  google_trends             100  OK        
+  reddit                      0  EMPTY     
+  newsapi                    10  OK        
+  hackernews                 15  OK        
+  youtube                    10  OK        
+  -------------------- --------  ----------
+  TOTAL                     135
+============================================================
+

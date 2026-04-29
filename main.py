@@ -6,6 +6,13 @@ CLI entry-point for the AI Content Empire.
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
+
 import sys
 from typing import Optional
 
@@ -82,6 +89,62 @@ def run(
                 console.print(f"  [red]- {err[:100]}[/red]")
 
         runner.close()
+
+        # ── Clip Engine — Phase 2/3/4 (synchronous, no Celery needed) ─────
+        from src.orchestrator.pipeline import load_niches
+        from tasks.clip_tasks import discover_and_queue as _discover_task
+        from tasks.clip_tasks import process_clip_job as _clip_job
+        from clip_publisher import publish_ready_clips
+
+        all_niches = load_niches()
+        target_niches = niches or list(all_niches.keys())
+
+        for niche in target_niches:
+            console.print(f"\n[bold cyan][Clip Engine] Starting clip pipeline for '{niche}' ...[/bold cyan]")
+
+            # ── Discover trending YouTube URLs ───────────────────────
+            try:
+                niche_cfg = all_niches.get(niche)
+                if not niche_cfg:
+                    from src.utils.models import NicheConfig
+                    niche_cfg = NicheConfig(
+                        name=niche,
+                        display_name=niche.title(),
+                        description=f"Auto-generated config for {niche}",
+                        keywords=[niche],
+                    )
+                from src.trend_engine.collector import YouTubeTrendCollector
+                collector = YouTubeTrendCollector()
+                try:
+                    raw_trends = collector.collect(niche_cfg)
+                finally:
+                    collector.close()
+
+                youtube_urls = [
+                    t.url for t in raw_trends
+                    if t.url and "youtube.com/watch" in t.url
+                ][:5]
+
+                console.print(f"  Found {len(youtube_urls)} trending YouTube URLs")
+
+                # ── Extract + enhance clips (synchronous) ────────────
+                for url in youtube_urls:
+                    console.print(f"  Processing: {url}")
+                    try:
+                        _clip_job(url, niche)  # direct call, NOT .delay()
+                    except Exception as clip_err:
+                        console.print(f"  [red]Clip job failed: {clip_err}[/red]")
+
+                # ── Publish enhanced clips to YouTube ─────────────────
+                console.print(f"\n[bold cyan][Clip Engine] Uploading enhanced clips to YouTube ...[/bold cyan]")
+                published = publish_ready_clips(niche=niche)
+                console.print(
+                    f"[bold green][Clip Engine] Done — {len(published)} clip(s) published for '{niche}'[/bold green]"
+                )
+
+            except Exception as clip_pipeline_err:
+                logger.error("clip_pipeline_failed", niche=niche, error=str(clip_pipeline_err))
+                console.print(f"  [red]Clip pipeline failed for {niche}: {clip_pipeline_err}[/red]")
 
     except KeyboardInterrupt:
         console.print("\n[yellow]Pipeline interrupted by user.[/yellow]")
@@ -212,7 +275,7 @@ def health() -> None:
     console.print("\n[bold]System Health Check[/bold]\n")
 
     checks = {
-        "Gemini API Key (AI + Scoring)": bool(settings.gemini_api_key),
+        "Groq API Key (AI + Scoring)": bool(settings.groq_api_key),
         "Pexels API Key (Video)": bool(settings.pexels_api_key),
         "NewsAPI Key (Trends)": bool(settings.news_api_key),
         "YouTube API Key": bool(settings.youtube_api_key),
@@ -228,7 +291,7 @@ def health() -> None:
     table.add_column("Status", width=15)
 
     all_good = True
-    critical = {"Gemini API Key (AI + Scoring)", "Pexels API Key (Video)", "NewsAPI Key (Trends)"}
+    critical = {"Groq API Key (AI + Scoring)", "Pexels API Key (Video)", "NewsAPI Key (Trends)"}
 
     for check, value in checks.items():
 
@@ -254,6 +317,77 @@ def health() -> None:
         sys.exit(1)
 
 
+# ─── YOUTUBE TEST UPLOAD ─────────────────────────────────────────────────────
+
+@app.command("youtube-test-upload")
+def youtube_test_upload(
+    video: Path = typer.Argument(..., help="Path to an existing MP4 file to upload"),
+    title: str = typer.Option("Test upload — Content Empire", "--title", "-t"),
+    description: str = typer.Option("", "--description", "-d"),
+    tags: Optional[str] = typer.Option(None, "--tags", help="Comma-separated tags"),
+    category_id: str = typer.Option("28", "--category-id", help="YouTube category ID"),
+    privacy: str = typer.Option(
+        "unlisted",
+        "--privacy",
+        "-p",
+        help="privacyStatus: public, unlisted, or private",
+    ),
+) -> None:
+    """Upload one video file to YouTube (OAuth token.json) and print the full API response."""
+    _setup()
+
+    from googleapiclient.errors import HttpError
+
+    from src.core.exceptions import PublishingError
+    from src.publisher.publisher import YouTubePublisher
+
+    tag_list = [x.strip() for x in tags.split(",")] if tags else []
+    tag_list = [x for x in tag_list if x]
+
+    publisher = YouTubePublisher()
+    video_path = video.expanduser().resolve()
+
+    console.print(f"\n[bold]YouTube test upload[/bold]")
+    console.print(f"  file: {video_path}")
+    console.print(f"  title: {title[:100]}")
+    console.print(f"  privacy: {privacy}\n")
+
+    try:
+        response = publisher.upload_video_file(
+            video_path,
+            title=title,
+            description=description,
+            tags=tag_list,
+            category_id=category_id,
+            privacy_status=privacy,
+        )
+        console.print("[bold green]SUCCESS[/bold green]\n")
+        console.print(json.dumps(response, indent=2, default=str))
+        vid = response.get("id")
+        if vid:
+            console.print(f"\n[green]video_id:[/green] {vid}")
+            console.print(f"[green]url:[/green] https://www.youtube.com/watch?v={vid}")
+    except PublishingError as e:
+        console.print(f"\n[bold red]FAILED (configuration / file)[/bold red]\n{e}")
+        sys.exit(1)
+    except HttpError as e:
+        console.print("\n[bold red]FAILED (YouTube API HTTP error)[/bold red]")
+        try:
+            body = e.content.decode("utf-8") if e.content else ""
+        except Exception:
+            body = repr(e.content)
+        console.print(f"status: {getattr(e.resp, 'status', '')}")
+        console.print(f"reason: {getattr(e.resp, 'reason', '')}")
+        console.print(f"body:\n{body}")
+        details = getattr(e, "error_details", None)
+        if details:
+            console.print(f"\nerror_details:\n{json.dumps(details, indent=2, default=str)}")
+        sys.exit(1)
+    except Exception as e:
+        console.print(f"\n[bold red]FAILED[/bold red]\n{type(e).__name__}: {e}")
+        sys.exit(1)
+
+
 # ─── SERVER ───────────────────────────────────────────────────────────────────
 
 @app.command()
@@ -274,6 +408,61 @@ def server(
         port=port,
         reload=settings.env == "development",
     )
+
+
+# ─── CLIPS ────────────────────────────────────────────────────────────────
+
+@app.command()
+def clips(
+    niche: str = typer.Option("technology", "--niche", "-n", help="Niche to discover trending YouTube videos for"),
+) -> None:
+    """Discover trending YouTube videos for a niche and queue clip extraction jobs."""
+    _setup()
+
+    from tasks.clip_tasks import discover_and_queue
+
+    console.print(f"\n[bold cyan]Discovering trending YouTube videos for niche: {niche}[/bold cyan]\n")
+
+    try:
+        result = discover_and_queue.delay(niche)
+        console.print(f"[green]✅ Queued discover_and_queue job for '{niche}'[/green]")
+        console.print(f"[dim]Task ID: {result.id}[/dim]")
+        console.print(f"\n[yellow]Jobs will be processed by the Celery worker.[/yellow]")
+        console.print(f"[dim]Start a worker: celery -A celery_app worker --loglevel=info[/dim]")
+    except Exception as e:
+        logger.error("clips_command_failed", error=str(e))
+        console.print(f"\n[red]Failed to queue clip discovery: {e}[/red]")
+        sys.exit(1)
+
+
+# ─── PUBLISH ──────────────────────────────────────────────────────────────
+
+@app.command()
+def publish(
+    niche: Optional[str] = typer.Option(None, "--niche", "-n", help="Only publish clips for this niche"),
+) -> None:
+    """Upload all enhanced clips to YouTube Shorts (private)."""
+    _setup()
+
+    from clip_publisher import publish_ready_clips
+
+    console.print(f"\n[bold cyan]Publishing enhanced clips to YouTube Shorts[/bold cyan]")
+    if niche:
+        console.print(f"[dim]Niche filter: {niche}[/dim]\n")
+
+    try:
+        uploaded = publish_ready_clips(niche=niche)
+        if uploaded:
+            console.print(f"\n[bold green]✅ {len(uploaded)} clip(s) published successfully![/bold green]")
+        else:
+            console.print(f"\n[yellow]No clips were uploaded.[/yellow]")
+    except FileNotFoundError as e:
+        console.print(f"\n[red]{e}[/red]")
+        sys.exit(1)
+    except Exception as e:
+        logger.error("publish_command_failed", error=str(e))
+        console.print(f"\n[red]Publish failed: {e}[/red]")
+        sys.exit(1)
 
 
 # ─── SCHEDULER ────────────────────────────────────────────────────────────────

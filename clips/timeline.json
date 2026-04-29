@@ -1,0 +1,3669 @@
+{
+  "source_url": "https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4",
+  "source_video": "clips\\source_video.mp4",
+  "timeline": [
+    {
+      "time": 0,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0088
+    },
+    {
+      "time": 1,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0185
+    },
+    {
+      "time": 2,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0314
+    },
+    {
+      "time": 3,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0462
+    },
+    {
+      "time": 4,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.039
+    },
+    {
+      "time": 5,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0277
+    },
+    {
+      "time": 6,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0211
+    },
+    {
+      "time": 7,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0428
+    },
+    {
+      "time": 8,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0597
+    },
+    {
+      "time": 9,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2216
+    },
+    {
+      "time": 10,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3882
+    },
+    {
+      "time": 11,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2825
+    },
+    {
+      "time": 12,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3187
+    },
+    {
+      "time": 13,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3003
+    },
+    {
+      "time": 14,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3953
+    },
+    {
+      "time": 15,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3379
+    },
+    {
+      "time": 16,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2629
+    },
+    {
+      "time": 17,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.283
+    },
+    {
+      "time": 18,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.174
+    },
+    {
+      "time": 19,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1062
+    },
+    {
+      "time": 20,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3698
+    },
+    {
+      "time": 21,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2155
+    },
+    {
+      "time": 22,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.031
+    },
+    {
+      "time": 23,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0415
+    },
+    {
+      "time": 24,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0379
+    },
+    {
+      "time": 25,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0427
+    },
+    {
+      "time": 26,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0396
+    },
+    {
+      "time": 27,
+      "word": "I",
+      "scene_start": false,
+      "energy_rms": 0.0449
+    },
+    {
+      "time": 28,
+      "word": "don't",
+      "scene_start": false,
+      "energy_rms": 0.0371
+    },
+    {
+      "time": 29,
+      "word": "know if that's the right thing to do...",
+      "scene_start": false,
+      "energy_rms": 0.0386
+    },
+    {
+      "time": 30,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0433
+    },
+    {
+      "time": 31,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0548
+    },
+    {
+      "time": 32,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.075
+    },
+    {
+      "time": 33,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.103
+    },
+    {
+      "time": 34,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1698
+    },
+    {
+      "time": 35,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2164
+    },
+    {
+      "time": 36,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2206
+    },
+    {
+      "time": 37,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1322
+    },
+    {
+      "time": 38,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0791
+    },
+    {
+      "time": 39,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0553
+    },
+    {
+      "time": 40,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0386
+    },
+    {
+      "time": 41,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0354
+    },
+    {
+      "time": 42,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0248
+    },
+    {
+      "time": 43,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0162
+    },
+    {
+      "time": 44,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0174
+    },
+    {
+      "time": 45,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0693
+    },
+    {
+      "time": 46,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0769
+    },
+    {
+      "time": 47,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0189
+    },
+    {
+      "time": 48,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0427
+    },
+    {
+      "time": 49,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0197
+    },
+    {
+      "time": 50,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0828
+    },
+    {
+      "time": 51,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0815
+    },
+    {
+      "time": 52,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.055
+    },
+    {
+      "time": 53,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0067
+    },
+    {
+      "time": 54,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0261
+    },
+    {
+      "time": 55,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0454
+    },
+    {
+      "time": 56,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0769
+    },
+    {
+      "time": 57,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0663
+    },
+    {
+      "time": 58,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1076
+    },
+    {
+      "time": 59,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0788
+    },
+    {
+      "time": 60,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1015
+    },
+    {
+      "time": 61,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0995
+    },
+    {
+      "time": 62,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1179
+    },
+    {
+      "time": 63,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1347
+    },
+    {
+      "time": 64,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1663
+    },
+    {
+      "time": 65,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.074
+    },
+    {
+      "time": 66,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.126
+    },
+    {
+      "time": 67,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0658
+    },
+    {
+      "time": 68,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1133
+    },
+    {
+      "time": 69,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0639
+    },
+    {
+      "time": 70,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0848
+    },
+    {
+      "time": 71,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0865
+    },
+    {
+      "time": 72,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.171
+    },
+    {
+      "time": 73,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1312
+    },
+    {
+      "time": 74,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1342
+    },
+    {
+      "time": 75,
+      "word": "Oh",
+      "scene_start": true,
+      "energy_rms": 0.1005
+    },
+    {
+      "time": 76,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0939
+    },
+    {
+      "time": 77,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1467
+    },
+    {
+      "time": 78,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1074
+    },
+    {
+      "time": 79,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1169
+    },
+    {
+      "time": 80,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0747
+    },
+    {
+      "time": 81,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1344
+    },
+    {
+      "time": 82,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1132
+    },
+    {
+      "time": 83,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2265
+    },
+    {
+      "time": 84,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0325
+    },
+    {
+      "time": 85,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0024
+    },
+    {
+      "time": 86,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0083
+    },
+    {
+      "time": 87,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0035
+    },
+    {
+      "time": 88,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0008
+    },
+    {
+      "time": 89,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0017
+    },
+    {
+      "time": 90,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0098
+    },
+    {
+      "time": 91,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0035
+    },
+    {
+      "time": 92,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0162
+    },
+    {
+      "time": 93,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0293
+    },
+    {
+      "time": 94,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0287
+    },
+    {
+      "time": 95,
+      "word": "...",
+      "scene_start": false,
+      "energy_rms": 0.0356
+    },
+    {
+      "time": 96,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0605
+    },
+    {
+      "time": 97,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0476
+    },
+    {
+      "time": 98,
+      "word": "...",
+      "scene_start": false,
+      "energy_rms": 0.0342
+    },
+    {
+      "time": 99,
+      "word": "...",
+      "scene_start": true,
+      "energy_rms": 0.0312
+    },
+    {
+      "time": 100,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0919
+    },
+    {
+      "time": 101,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2251
+    },
+    {
+      "time": 102,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1698
+    },
+    {
+      "time": 103,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2366
+    },
+    {
+      "time": 104,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1012
+    },
+    {
+      "time": 105,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0472
+    },
+    {
+      "time": 106,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0214
+    },
+    {
+      "time": 107,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.058
+    },
+    {
+      "time": 108,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0658
+    },
+    {
+      "time": 109,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.085
+    },
+    {
+      "time": 110,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0855
+    },
+    {
+      "time": 111,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1295
+    },
+    {
+      "time": 112,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1239
+    },
+    {
+      "time": 113,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.104
+    },
+    {
+      "time": 114,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1211
+    },
+    {
+      "time": 115,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0734
+    },
+    {
+      "time": 116,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2143
+    },
+    {
+      "time": 117,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1268
+    },
+    {
+      "time": 118,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0354
+    },
+    {
+      "time": 119,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0422
+    },
+    {
+      "time": 120,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0442
+    },
+    {
+      "time": 121,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0209
+    },
+    {
+      "time": 122,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0179
+    },
+    {
+      "time": 123,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0273
+    },
+    {
+      "time": 124,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1327
+    },
+    {
+      "time": 125,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0761
+    },
+    {
+      "time": 126,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0578
+    },
+    {
+      "time": 127,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0609
+    },
+    {
+      "time": 128,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0481
+    },
+    {
+      "time": 129,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0845
+    },
+    {
+      "time": 130,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0288
+    },
+    {
+      "time": 131,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0185
+    },
+    {
+      "time": 132,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0521
+    },
+    {
+      "time": 133,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0447
+    },
+    {
+      "time": 134,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.026
+    },
+    {
+      "time": 135,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.011
+    },
+    {
+      "time": 136,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0054
+    },
+    {
+      "time": 137,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0371
+    },
+    {
+      "time": 138,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0295
+    },
+    {
+      "time": 139,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0597
+    },
+    {
+      "time": 140,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2393
+    },
+    {
+      "time": 141,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0034
+    },
+    {
+      "time": 142,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0167
+    },
+    {
+      "time": 143,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0253
+    },
+    {
+      "time": 144,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0467
+    },
+    {
+      "time": 145,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0762
+    },
+    {
+      "time": 146,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1843
+    },
+    {
+      "time": 147,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1341
+    },
+    {
+      "time": 148,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1639
+    },
+    {
+      "time": 149,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2597
+    },
+    {
+      "time": 150,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0263
+    },
+    {
+      "time": 151,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0418
+    },
+    {
+      "time": 152,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0245
+    },
+    {
+      "time": 153,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1272
+    },
+    {
+      "time": 154,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0125
+    },
+    {
+      "time": 155,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0145
+    },
+    {
+      "time": 156,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0346
+    },
+    {
+      "time": 157,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1207
+    },
+    {
+      "time": 158,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0978
+    },
+    {
+      "time": 159,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0204
+    },
+    {
+      "time": 160,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0337
+    },
+    {
+      "time": 161,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0396
+    },
+    {
+      "time": 162,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0098
+    },
+    {
+      "time": 163,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0169
+    },
+    {
+      "time": 164,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0307
+    },
+    {
+      "time": 165,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0073
+    },
+    {
+      "time": 166,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0162
+    },
+    {
+      "time": 167,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0226
+    },
+    {
+      "time": 168,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1093
+    },
+    {
+      "time": 169,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.098
+    },
+    {
+      "time": 170,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1526
+    },
+    {
+      "time": 171,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0135
+    },
+    {
+      "time": 172,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0135
+    },
+    {
+      "time": 173,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0349
+    },
+    {
+      "time": 174,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1516
+    },
+    {
+      "time": 175,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3049
+    },
+    {
+      "time": 176,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1064
+    },
+    {
+      "time": 177,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1255
+    },
+    {
+      "time": 178,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1968
+    },
+    {
+      "time": 179,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3105
+    },
+    {
+      "time": 180,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3664
+    },
+    {
+      "time": 181,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2585
+    },
+    {
+      "time": 182,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2413
+    },
+    {
+      "time": 183,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1477
+    },
+    {
+      "time": 184,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1781
+    },
+    {
+      "time": 185,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1411
+    },
+    {
+      "time": 186,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0197
+    },
+    {
+      "time": 187,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0369
+    },
+    {
+      "time": 188,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1211
+    },
+    {
+      "time": 189,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2132
+    },
+    {
+      "time": 190,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1405
+    },
+    {
+      "time": 191,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1395
+    },
+    {
+      "time": 192,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1315
+    },
+    {
+      "time": 193,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1396
+    },
+    {
+      "time": 194,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.2457
+    },
+    {
+      "time": 195,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4744
+    },
+    {
+      "time": 196,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.8518
+    },
+    {
+      "time": 197,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5113
+    },
+    {
+      "time": 198,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3024
+    },
+    {
+      "time": 199,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1056
+    },
+    {
+      "time": 200,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0358
+    },
+    {
+      "time": 201,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0433
+    },
+    {
+      "time": 202,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.044
+    },
+    {
+      "time": 203,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0273
+    },
+    {
+      "time": 204,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0324
+    },
+    {
+      "time": 205,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0342
+    },
+    {
+      "time": 206,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0472
+    },
+    {
+      "time": 207,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0521
+    },
+    {
+      "time": 208,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.0796
+    },
+    {
+      "time": 209,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1067
+    },
+    {
+      "time": 210,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1039
+    },
+    {
+      "time": 211,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1182
+    },
+    {
+      "time": 212,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.127
+    },
+    {
+      "time": 213,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1189
+    },
+    {
+      "time": 214,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2904
+    },
+    {
+      "time": 215,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0865
+    },
+    {
+      "time": 216,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0634
+    },
+    {
+      "time": 217,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0275
+    },
+    {
+      "time": 218,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0727
+    },
+    {
+      "time": 219,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0803
+    },
+    {
+      "time": 220,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0649
+    },
+    {
+      "time": 221,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0207
+    },
+    {
+      "time": 222,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0153
+    },
+    {
+      "time": 223,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1469
+    },
+    {
+      "time": 224,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2003
+    },
+    {
+      "time": 225,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1933
+    },
+    {
+      "time": 226,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3943
+    },
+    {
+      "time": 227,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4226
+    },
+    {
+      "time": 228,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1516
+    },
+    {
+      "time": 229,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0366
+    },
+    {
+      "time": 230,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0315
+    },
+    {
+      "time": 231,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0285
+    },
+    {
+      "time": 232,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.025
+    },
+    {
+      "time": 233,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0337
+    },
+    {
+      "time": 234,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0263
+    },
+    {
+      "time": 235,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2002
+    },
+    {
+      "time": 236,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1555
+    },
+    {
+      "time": 237,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2098
+    },
+    {
+      "time": 238,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1953
+    },
+    {
+      "time": 239,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1708
+    },
+    {
+      "time": 240,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1691
+    },
+    {
+      "time": 241,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2199
+    },
+    {
+      "time": 242,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1713
+    },
+    {
+      "time": 243,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1782
+    },
+    {
+      "time": 244,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2735
+    },
+    {
+      "time": 245,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.172
+    },
+    {
+      "time": 246,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2678
+    },
+    {
+      "time": 247,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2725
+    },
+    {
+      "time": 248,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3654
+    },
+    {
+      "time": 249,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4224
+    },
+    {
+      "time": 250,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6078
+    },
+    {
+      "time": 251,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7425
+    },
+    {
+      "time": 252,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.7771
+    },
+    {
+      "time": 253,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6521
+    },
+    {
+      "time": 254,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9791
+    },
+    {
+      "time": 255,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.9216
+    },
+    {
+      "time": 256,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8838
+    },
+    {
+      "time": 257,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.8196
+    },
+    {
+      "time": 258,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.8813
+    },
+    {
+      "time": 259,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.7489
+    },
+    {
+      "time": 260,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7462
+    },
+    {
+      "time": 261,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.7698
+    },
+    {
+      "time": 262,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.7815
+    },
+    {
+      "time": 263,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7732
+    },
+    {
+      "time": 264,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6003
+    },
+    {
+      "time": 265,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9761
+    },
+    {
+      "time": 266,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6025
+    },
+    {
+      "time": 267,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7096
+    },
+    {
+      "time": 268,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6833
+    },
+    {
+      "time": 269,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8211
+    },
+    {
+      "time": 270,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.7096
+    },
+    {
+      "time": 271,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4422
+    },
+    {
+      "time": 272,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.503
+    },
+    {
+      "time": 273,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5646
+    },
+    {
+      "time": 274,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0427
+    },
+    {
+      "time": 275,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3003
+    },
+    {
+      "time": 276,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4192
+    },
+    {
+      "time": 277,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5179
+    },
+    {
+      "time": 278,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.5037
+    },
+    {
+      "time": 279,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.5777
+    },
+    {
+      "time": 280,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4649
+    },
+    {
+      "time": 281,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5705
+    },
+    {
+      "time": 282,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4946
+    },
+    {
+      "time": 283,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.547
+    },
+    {
+      "time": 284,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4857
+    },
+    {
+      "time": 285,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3583
+    },
+    {
+      "time": 286,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2428
+    },
+    {
+      "time": 287,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.213
+    },
+    {
+      "time": 288,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2931
+    },
+    {
+      "time": 289,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3408
+    },
+    {
+      "time": 290,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4642
+    },
+    {
+      "time": 291,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6364
+    },
+    {
+      "time": 292,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.903
+    },
+    {
+      "time": 293,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7661
+    },
+    {
+      "time": 294,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9047
+    },
+    {
+      "time": 295,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.8904
+    },
+    {
+      "time": 296,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7621
+    },
+    {
+      "time": 297,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2678
+    },
+    {
+      "time": 298,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0368
+    },
+    {
+      "time": 299,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0084
+    },
+    {
+      "time": 300,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0103
+    },
+    {
+      "time": 301,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0272
+    },
+    {
+      "time": 302,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1379
+    },
+    {
+      "time": 303,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0627
+    },
+    {
+      "time": 304,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0364
+    },
+    {
+      "time": 305,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0334
+    },
+    {
+      "time": 306,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.0417
+    },
+    {
+      "time": 307,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0605
+    },
+    {
+      "time": 308,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.142
+    },
+    {
+      "time": 309,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1309
+    },
+    {
+      "time": 310,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1433
+    },
+    {
+      "time": 311,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2116
+    },
+    {
+      "time": 312,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.198
+    },
+    {
+      "time": 313,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0533
+    },
+    {
+      "time": 314,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.027
+    },
+    {
+      "time": 315,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0069
+    },
+    {
+      "time": 316,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0054
+    },
+    {
+      "time": 317,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0051
+    },
+    {
+      "time": 318,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0582
+    },
+    {
+      "time": 319,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.058
+    },
+    {
+      "time": 320,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0118
+    },
+    {
+      "time": 321,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1997
+    },
+    {
+      "time": 322,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1604
+    },
+    {
+      "time": 323,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0243
+    },
+    {
+      "time": 324,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.042
+    },
+    {
+      "time": 325,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0744
+    },
+    {
+      "time": 326,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0875
+    },
+    {
+      "time": 327,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0578
+    },
+    {
+      "time": 328,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0411
+    },
+    {
+      "time": 329,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1363
+    },
+    {
+      "time": 330,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.115
+    },
+    {
+      "time": 331,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0961
+    },
+    {
+      "time": 332,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1204
+    },
+    {
+      "time": 333,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2551
+    },
+    {
+      "time": 334,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3847
+    },
+    {
+      "time": 335,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2735
+    },
+    {
+      "time": 336,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3029
+    },
+    {
+      "time": 337,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9062
+    },
+    {
+      "time": 338,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.0383
+    },
+    {
+      "time": 339,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0054
+    },
+    {
+      "time": 340,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0172
+    },
+    {
+      "time": 341,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0433
+    },
+    {
+      "time": 342,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0696
+    },
+    {
+      "time": 343,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0818
+    },
+    {
+      "time": 344,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0064
+    },
+    {
+      "time": 345,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0437
+    },
+    {
+      "time": 346,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9524
+    },
+    {
+      "time": 347,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1331
+    },
+    {
+      "time": 348,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0813
+    },
+    {
+      "time": 349,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0919
+    },
+    {
+      "time": 350,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0752
+    },
+    {
+      "time": 351,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.782
+    },
+    {
+      "time": 352,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0339
+    },
+    {
+      "time": 353,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3808
+    },
+    {
+      "time": 354,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0128
+    },
+    {
+      "time": 355,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.047
+    },
+    {
+      "time": 356,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0712
+    },
+    {
+      "time": 357,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0826
+    },
+    {
+      "time": 358,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0562
+    },
+    {
+      "time": 359,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.0904
+    },
+    {
+      "time": 360,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0739
+    },
+    {
+      "time": 361,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0717
+    },
+    {
+      "time": 362,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0164
+    },
+    {
+      "time": 363,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1288
+    },
+    {
+      "time": 364,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0061
+    },
+    {
+      "time": 365,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0032
+    },
+    {
+      "time": 366,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0039
+    },
+    {
+      "time": 367,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0027
+    },
+    {
+      "time": 368,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.0029
+    },
+    {
+      "time": 369,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0037
+    },
+    {
+      "time": 370,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0029
+    },
+    {
+      "time": 371,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0027
+    },
+    {
+      "time": 372,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1091
+    },
+    {
+      "time": 373,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0503
+    },
+    {
+      "time": 374,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0212
+    },
+    {
+      "time": 375,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0184
+    },
+    {
+      "time": 376,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0649
+    },
+    {
+      "time": 377,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1863
+    },
+    {
+      "time": 378,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0526
+    },
+    {
+      "time": 379,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1309
+    },
+    {
+      "time": 380,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0868
+    },
+    {
+      "time": 381,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0629
+    },
+    {
+      "time": 382,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0794
+    },
+    {
+      "time": 383,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1002
+    },
+    {
+      "time": 384,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0666
+    },
+    {
+      "time": 385,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0691
+    },
+    {
+      "time": 386,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0356
+    },
+    {
+      "time": 387,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0052
+    },
+    {
+      "time": 388,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3175
+    },
+    {
+      "time": 389,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0233
+    },
+    {
+      "time": 390,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0379
+    },
+    {
+      "time": 391,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0737
+    },
+    {
+      "time": 392,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.0293
+    },
+    {
+      "time": 393,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0459
+    },
+    {
+      "time": 394,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0479
+    },
+    {
+      "time": 395,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0449
+    },
+    {
+      "time": 396,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.042
+    },
+    {
+      "time": 397,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0872
+    },
+    {
+      "time": 398,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.2693
+    },
+    {
+      "time": 399,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.3012
+    },
+    {
+      "time": 400,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2406
+    },
+    {
+      "time": 401,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.3256
+    },
+    {
+      "time": 402,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7374
+    },
+    {
+      "time": 403,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3201
+    },
+    {
+      "time": 404,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5022
+    },
+    {
+      "time": 405,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.225
+    },
+    {
+      "time": 406,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.217
+    },
+    {
+      "time": 407,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3059
+    },
+    {
+      "time": 408,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5794
+    },
+    {
+      "time": 409,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1664
+    },
+    {
+      "time": 410,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3066
+    },
+    {
+      "time": 411,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2145
+    },
+    {
+      "time": 412,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2857
+    },
+    {
+      "time": 413,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1673
+    },
+    {
+      "time": 414,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0887
+    },
+    {
+      "time": 415,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.332
+    },
+    {
+      "time": 416,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2413
+    },
+    {
+      "time": 417,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1722
+    },
+    {
+      "time": 418,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7162
+    },
+    {
+      "time": 419,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9811
+    },
+    {
+      "time": 420,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.757
+    },
+    {
+      "time": 421,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4288
+    },
+    {
+      "time": 422,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5128
+    },
+    {
+      "time": 423,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.355
+    },
+    {
+      "time": 424,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4808
+    },
+    {
+      "time": 425,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2518
+    },
+    {
+      "time": 426,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2152
+    },
+    {
+      "time": 427,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.2344
+    },
+    {
+      "time": 428,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3413
+    },
+    {
+      "time": 429,
+      "word": ".",
+      "scene_start": true,
+      "energy_rms": 0.3511
+    },
+    {
+      "time": 430,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5744
+    },
+    {
+      "time": 431,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.5381
+    },
+    {
+      "time": 432,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4405
+    },
+    {
+      "time": 433,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4599
+    },
+    {
+      "time": 434,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4101
+    },
+    {
+      "time": 435,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4646
+    },
+    {
+      "time": 436,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8324
+    },
+    {
+      "time": 437,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2143
+    },
+    {
+      "time": 438,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1388
+    },
+    {
+      "time": 439,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0587
+    },
+    {
+      "time": 440,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.2565
+    },
+    {
+      "time": 441,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2885
+    },
+    {
+      "time": 442,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.3631
+    },
+    {
+      "time": 443,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6268
+    },
+    {
+      "time": 444,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.5902
+    },
+    {
+      "time": 445,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1877
+    },
+    {
+      "time": 446,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0926
+    },
+    {
+      "time": 447,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0287
+    },
+    {
+      "time": 448,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0169
+    },
+    {
+      "time": 449,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0019
+    },
+    {
+      "time": 450,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.025
+    },
+    {
+      "time": 451,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0094
+    },
+    {
+      "time": 452,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0123
+    },
+    {
+      "time": 453,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.004
+    },
+    {
+      "time": 454,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0022
+    },
+    {
+      "time": 455,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0017
+    },
+    {
+      "time": 456,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1057
+    },
+    {
+      "time": 457,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.132
+    },
+    {
+      "time": 458,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0118
+    },
+    {
+      "time": 459,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0017
+    },
+    {
+      "time": 460,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0013
+    },
+    {
+      "time": 461,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0008
+    },
+    {
+      "time": 462,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0214
+    },
+    {
+      "time": 463,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0521
+    },
+    {
+      "time": 464,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0556
+    },
+    {
+      "time": 465,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.043
+    },
+    {
+      "time": 466,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0681
+    },
+    {
+      "time": 467,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.103
+    },
+    {
+      "time": 468,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1042
+    },
+    {
+      "time": 469,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1516
+    },
+    {
+      "time": 470,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0895
+    },
+    {
+      "time": 471,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0437
+    },
+    {
+      "time": 472,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0661
+    },
+    {
+      "time": 473,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0678
+    },
+    {
+      "time": 474,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0924
+    },
+    {
+      "time": 475,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1027
+    },
+    {
+      "time": 476,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.096
+    },
+    {
+      "time": 477,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1309
+    },
+    {
+      "time": 478,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1825
+    },
+    {
+      "time": 479,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2607
+    },
+    {
+      "time": 480,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.4234
+    },
+    {
+      "time": 481,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1946
+    },
+    {
+      "time": 482,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1088
+    },
+    {
+      "time": 483,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.046
+    },
+    {
+      "time": 484,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.0408
+    },
+    {
+      "time": 485,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0788
+    },
+    {
+      "time": 486,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0725
+    },
+    {
+      "time": 487,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0973
+    },
+    {
+      "time": 488,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0737
+    },
+    {
+      "time": 489,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4514
+    },
+    {
+      "time": 490,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6759
+    },
+    {
+      "time": 491,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3285
+    },
+    {
+      "time": 492,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2398
+    },
+    {
+      "time": 493,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5076
+    },
+    {
+      "time": 494,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3132
+    },
+    {
+      "time": 495,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3027
+    },
+    {
+      "time": 496,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2815
+    },
+    {
+      "time": 497,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.6425
+    },
+    {
+      "time": 498,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4358
+    },
+    {
+      "time": 499,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6116
+    },
+    {
+      "time": 500,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6179
+    },
+    {
+      "time": 501,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4197
+    },
+    {
+      "time": 502,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5211
+    },
+    {
+      "time": 503,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4973
+    },
+    {
+      "time": 504,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5089
+    },
+    {
+      "time": 505,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.584
+    },
+    {
+      "time": 506,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.856
+    },
+    {
+      "time": 507,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8855
+    },
+    {
+      "time": 508,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.757
+    },
+    {
+      "time": 509,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9484
+    },
+    {
+      "time": 510,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7587
+    },
+    {
+      "time": 511,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8024
+    },
+    {
+      "time": 512,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7403
+    },
+    {
+      "time": 513,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.783
+    },
+    {
+      "time": 514,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7725
+    },
+    {
+      "time": 515,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6702
+    },
+    {
+      "time": 516,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.768
+    },
+    {
+      "time": 517,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6852
+    },
+    {
+      "time": 518,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7818
+    },
+    {
+      "time": 519,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8073
+    },
+    {
+      "time": 520,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7373
+    },
+    {
+      "time": 521,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6774
+    },
+    {
+      "time": 522,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.8209
+    },
+    {
+      "time": 523,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 1.0
+    },
+    {
+      "time": 524,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.789
+    },
+    {
+      "time": 525,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6384
+    },
+    {
+      "time": 526,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6148
+    },
+    {
+      "time": 527,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6167
+    },
+    {
+      "time": 528,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.9067
+    },
+    {
+      "time": 529,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.672
+    },
+    {
+      "time": 530,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.629
+    },
+    {
+      "time": 531,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.4347
+    },
+    {
+      "time": 532,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.3096
+    },
+    {
+      "time": 533,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2245
+    },
+    {
+      "time": 534,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1452
+    },
+    {
+      "time": 535,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0863
+    },
+    {
+      "time": 536,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0668
+    },
+    {
+      "time": 537,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0632
+    },
+    {
+      "time": 538,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.0794
+    },
+    {
+      "time": 539,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1089
+    },
+    {
+      "time": 540,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1
+    },
+    {
+      "time": 541,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0951
+    },
+    {
+      "time": 542,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.1037
+    },
+    {
+      "time": 543,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.14
+    },
+    {
+      "time": 544,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1722
+    },
+    {
+      "time": 545,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1336
+    },
+    {
+      "time": 546,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1103
+    },
+    {
+      "time": 547,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1204
+    },
+    {
+      "time": 548,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1396
+    },
+    {
+      "time": 549,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1192
+    },
+    {
+      "time": 550,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1167
+    },
+    {
+      "time": 551,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1172
+    },
+    {
+      "time": 552,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1445
+    },
+    {
+      "time": 553,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2073
+    },
+    {
+      "time": 554,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1548
+    },
+    {
+      "time": 555,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.1688
+    },
+    {
+      "time": 556,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1973
+    },
+    {
+      "time": 557,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1405
+    },
+    {
+      "time": 558,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1629
+    },
+    {
+      "time": 559,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1057
+    },
+    {
+      "time": 560,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2659
+    },
+    {
+      "time": 561,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1946
+    },
+    {
+      "time": 562,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2855
+    },
+    {
+      "time": 563,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1752
+    },
+    {
+      "time": 564,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2567
+    },
+    {
+      "time": 565,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2111
+    },
+    {
+      "time": 566,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1941
+    },
+    {
+      "time": 567,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2351
+    },
+    {
+      "time": 568,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1352
+    },
+    {
+      "time": 569,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1449
+    },
+    {
+      "time": 570,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1256
+    },
+    {
+      "time": 571,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6858
+    },
+    {
+      "time": 572,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7722
+    },
+    {
+      "time": 573,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6956
+    },
+    {
+      "time": 574,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.6914
+    },
+    {
+      "time": 575,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.7504
+    },
+    {
+      "time": 576,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7042
+    },
+    {
+      "time": 577,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.7698
+    },
+    {
+      "time": 578,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.5605
+    },
+    {
+      "time": 579,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.846
+    },
+    {
+      "time": 580,
+      "word": "",
+      "scene_start": true,
+      "energy_rms": 0.6307
+    },
+    {
+      "time": 581,
+      "word": ".",
+      "scene_start": false,
+      "energy_rms": 0.2352
+    },
+    {
+      "time": 582,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.2025
+    },
+    {
+      "time": 583,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1722
+    },
+    {
+      "time": 584,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1064
+    },
+    {
+      "time": 585,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.04
+    },
+    {
+      "time": 586,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0268
+    },
+    {
+      "time": 587,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1755
+    },
+    {
+      "time": 588,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0497
+    },
+    {
+      "time": 589,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.104
+    },
+    {
+      "time": 590,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0776
+    },
+    {
+      "time": 591,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0543
+    },
+    {
+      "time": 592,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0806
+    },
+    {
+      "time": 593,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0804
+    },
+    {
+      "time": 594,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.1307
+    },
+    {
+      "time": 595,
+      "word": "",
+      "scene_start": false,
+      "energy_rms": 0.0921
+    }
+  ],
+  "top_windows": [
+    {
+      "start_sec": 250,
+      "end_sec": 280,
+      "score": 0.5754,
+      "avg_energy": 0.6686,
+      "word_density": 0.07,
+      "scene_changes": 15
+    },
+    {
+      "start_sec": 415,
+      "end_sec": 445,
+      "score": 0.4804,
+      "avg_energy": 0.4209,
+      "word_density": 0.1,
+      "scene_changes": 15
+    },
+    {
+      "start_sec": 481,
+      "end_sec": 511,
+      "score": 0.4794,
+      "avg_energy": 0.4286,
+      "word_density": 0.07,
+      "scene_changes": 5
+    },
+    {
+      "start_sec": 280,
+      "end_sec": 310,
+      "score": 0.4458,
+      "avg_energy": 0.3445,
+      "word_density": 0.07,
+      "scene_changes": 9
+    },
+    {
+      "start_sec": 385,
+      "end_sec": 415,
+      "score": 0.3975,
+      "avg_energy": 0.2037,
+      "word_density": 0.13,
+      "scene_changes": 9
+    },
+    {
+      "start_sec": 170,
+      "end_sec": 200,
+      "score": 0.3864,
+      "avg_energy": 0.2059,
+      "word_density": 0.03,
+      "scene_changes": 10
+    },
+    {
+      "start_sec": 322,
+      "end_sec": 352,
+      "score": 0.3773,
+      "avg_energy": 0.1833,
+      "word_density": 0.03,
+      "scene_changes": 6
+    },
+    {
+      "start_sec": 220,
+      "end_sec": 250,
+      "score": 0.3698,
+      "avg_energy": 0.1745,
+      "word_density": 0.0,
+      "scene_changes": 7
+    },
+    {
+      "start_sec": 74,
+      "end_sec": 104,
+      "score": 0.3469,
+      "avg_energy": 0.0773,
+      "word_density": 0.13,
+      "scene_changes": 6
+    },
+    {
+      "start_sec": 0,
+      "end_sec": 30,
+      "score": 0.3369,
+      "avg_energy": 0.1421,
+      "word_density": 0.33,
+      "scene_changes": 4
+    }
+  ],
+  "clips": [
+    "clips\\clip_001.mp4",
+    "clips\\clip_002.mp4",
+    "clips\\clip_003.mp4"
+  ]
+}

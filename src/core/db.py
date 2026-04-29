@@ -109,7 +109,82 @@ CREATE TABLE IF NOT EXISTS publish_log (
     published_at TEXT DEFAULT (datetime('now'))
 );
 
+CREATE TABLE IF NOT EXISTS clips (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    url         TEXT NOT NULL,
+    niche       TEXT,
+    clip_path   TEXT,
+    score       REAL,
+    start_sec   REAL,
+    end_sec     REAL,
+    status      TEXT DEFAULT 'pending',
+    gemini_score FLOAT,
+    hook_text   TEXT,
+    final_path  TEXT,
+    youtube_id  TEXT,
+    created_at  TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS keyword_rotation_state (
+    niche_name    TEXT PRIMARY KEY,
+    current_index INTEGER DEFAULT 0,
+    last_updated  TEXT DEFAULT (datetime('now'))
+);
+
 CREATE INDEX IF NOT EXISTS idx_trends_niche ON trends(niche);
 CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
 CREATE INDEX IF NOT EXISTS idx_jobs_niche ON jobs(niche);
+CREATE INDEX IF NOT EXISTS idx_clips_niche ON clips(niche);
+CREATE INDEX IF NOT EXISTS idx_clips_status ON clips(status);
 """
+
+
+def _ensure_keyword_rotation_table(conn: sqlite3.Connection) -> None:
+    """Create the keyword rotation state table when older DBs are in use."""
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS keyword_rotation_state (
+            niche_name    TEXT PRIMARY KEY,
+            current_index INTEGER DEFAULT 0,
+            last_updated  TEXT DEFAULT (datetime('now'))
+        )
+        """
+    )
+
+
+def get_keyword_index(niche_name: str) -> int:
+    """Return the current keyword rotation index for a niche."""
+    conn = get_connection()
+    try:
+        _ensure_keyword_rotation_table(conn)
+        row = conn.execute(
+            """
+            SELECT current_index
+            FROM keyword_rotation_state
+            WHERE niche_name = ?
+            """,
+            (niche_name,),
+        ).fetchone()
+        return int(row["current_index"]) if row else 0
+    finally:
+        conn.close()
+
+
+def set_keyword_index(niche_name: str, index: int) -> None:
+    """Persist the next keyword rotation index for a niche."""
+    conn = get_connection()
+    try:
+        _ensure_keyword_rotation_table(conn)
+        conn.execute(
+            """
+            INSERT INTO keyword_rotation_state (niche_name, current_index, last_updated)
+            VALUES (?, ?, datetime('now'))
+            ON CONFLICT(niche_name) DO UPDATE SET
+                current_index = excluded.current_index,
+                last_updated = datetime('now')
+            """,
+            (niche_name, index),
+        )
+        conn.commit()
+    finally:
+        conn.close()

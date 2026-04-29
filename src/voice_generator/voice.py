@@ -126,11 +126,42 @@ class VoiceGenerator:
         return duration
 
     @staticmethod
+    def _get_pydub_audio_segment():
+        """Import pydub with ffmpeg auto-configured (no RuntimeWarning)."""
+        import os
+        import warnings
+
+        # Suppress the RuntimeWarning pydub emits at import when ffmpeg isn't on PATH
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", RuntimeWarning)
+            from pydub import AudioSegment
+
+        # Override converter if it doesn't point to a real file
+        if not os.path.isfile(AudioSegment.converter):
+            # 1. Try the imageio_ffmpeg bundled binary (already a project dep)
+            try:
+                import imageio_ffmpeg
+                ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+                if ffmpeg_path and os.path.isfile(ffmpeg_path):
+                    AudioSegment.converter = ffmpeg_path
+                    AudioSegment.ffprobe = ffmpeg_path
+                    return AudioSegment
+            except ImportError:
+                pass
+
+            # 2. Fall back to explicit env var
+            env_path = os.getenv("FFMPEG_PATH")
+            if env_path and os.path.isfile(env_path):
+                AudioSegment.converter = env_path
+                AudioSegment.ffprobe = env_path
+
+        return AudioSegment
+
+    @staticmethod
     async def _get_audio_duration(path: Path) -> float:
         """Get audio duration using pydub."""
         try:
-            from pydub import AudioSegment
-
+            AudioSegment = VoiceGenerator._get_pydub_audio_segment()
             audio = AudioSegment.from_mp3(str(path))
             return len(audio) / 1000.0
         except Exception:

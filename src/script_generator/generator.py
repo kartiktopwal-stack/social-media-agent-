@@ -2,12 +2,13 @@
 src/script_generator/generator.py
 ─────────────────────────────────────────────────────────────────────────────
 Script Writer Agent — Generates optimized short-form video scripts
-using AI (Gemini), structured as HOOK + BODY + CTA.
+using AI (Groq / Llama), structured as HOOK + BODY + CTA.
 """
 
 from __future__ import annotations
 
 import json
+import os
 import re
 
 from tenacity import retry, stop_after_attempt, wait_exponential
@@ -73,15 +74,14 @@ class ScriptGenerator:
             platform=platform.value,
         )
 
-        if not settings.gemini_api_key:
-            logger.warning("gemini_not_configured_generating_template")
+        if not settings.groq_api_key:
+            logger.warning("groq_not_configured_generating_template")
             return self._generate_template(trend, niche, platform)
 
         try:
-            import google.generativeai as genai
+            from groq import Groq
 
-            genai.configure(api_key=settings.gemini_api_key)
-            model = genai.GenerativeModel(settings.ai_model)
+            client = Groq(api_key=settings.groq_api_key)
 
             style_guide = self.STYLE_PROMPTS.get(niche.script_style, self.STYLE_PROMPTS["dramatic_reveal"])
 
@@ -117,8 +117,11 @@ Rules:
 
 Return ONLY valid JSON, no other text."""
 
-            response = model.generate_content(prompt)
-            text = response.text.strip()
+            response = client.chat.completions.create(
+                model=settings.ai_model,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            text = (response.choices[0].message.content or "").strip()
 
             # Extract JSON
             if "```json" in text:

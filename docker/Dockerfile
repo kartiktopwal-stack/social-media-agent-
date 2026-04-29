@@ -29,5 +29,5 @@ RUN mkdir -p data/output/audio data/output/clips data/output/video data/output/f
 # Expose dashboard port
 EXPOSE 8000
 
-# Default command: run the daily pipeline
-CMD ["python", "main.py", "run", "--dry-run"]
+# Default: monitoring dashboard (use `python run_pipeline.py` for the full pipeline)
+CMD ["python", "main.py", "server"]

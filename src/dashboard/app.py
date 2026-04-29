@@ -213,7 +213,7 @@ async def get_config(_: str = Depends(verify_api_key)) -> dict:
         "ai_model": settings.ai_model,
         "tts_voice": settings.tts_voice,
         "apis_configured": {
-            "gemini": bool(settings.gemini_api_key),
+            "groq": bool(settings.groq_api_key),
             "pexels": bool(settings.pexels_api_key),
             "newsapi": bool(settings.news_api_key),
             "youtube": bool(settings.youtube_api_key),
